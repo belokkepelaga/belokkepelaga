@@ -8,65 +8,70 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from '@/compon
 
 const Navbar: React.FC<React.HTMLAttributes<HTMLElement>> = ({ className, ...props }) => {
     const pathname = usePathname();
+
+    const isLinkActive = (href: string) => {
+        // If the link is for the homepage, check for an exact match.
+        if (href === '/') {
+            return pathname === href;
+        }
+        // For all other links, use startsWith to handle nested pages.
+        return pathname.startsWith(href);
+    };
     
     return (
-        <nav className={cn('flex items-center relative z-[99999] justify-between py-6 w-[calc(100%-3rem)] max-h-[75px] mx-auto border-b border-white/10 border-dashed', className)} {...props}>
-            <Link href="/">
-                <Logo />
-            </Link>
-            
-            <ul className="hidden lg:flex items-center gap-3">
-                {navbarData.map((section) => (
-                    <li key={section.id}>
-                        <Link 
-                            href={section.to}
-                            className={`inline-flex items-center gap-2 rounded-full py-1 pr-3 pl-3 select-none transition-all cursor-pointer text-base border border-white/0 ${
-                                pathname.startsWith(section.to) 
-                                    ? 'text-white bg-white/16 backdrop-blur-2xl border-white/4 shadow-[0px_2px_5px_0px_rgba(255,255,255,0.06)_inset,0px_12px_20px_0px_rgba(0,0,0,0.06)]' 
-                                    : 'text-white/72 hover:text-white hover:bg-white/8 hover:shadow-[0px_10px_10px_-8px_rgba(18,18,23,0.02),0px_2px_2px_-1.5px_rgba(18,18,23,0.02),0px_1px_1px_-0.5px_rgba(18,18,23,0.02),0px_0px_0px_1px_rgba(18,18,23,0.02)]'
-                            }`}
-                        >
-                            {section.title}
-                        </Link>
-                    </li>
-                ))}
-            </ul>
-            
-            {/* <ul className="hidden lg:flex items-center">
-                <li>
-                    <Link href="/second-pages/signup" className="button-regular">Bahasa</Link>
-                </li>
-            </ul> */}
-            
-            <DropdownMenu unstyled className="lg:hidden block">
-                <DropdownMenuTrigger className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-surface-0 text-surface-950">
-                    <i className="pi pi-bars"></i>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="top-[calc(100%+0.5rem)] max-h-96 overflow-auto left-auto !right-0 w-60 p-2 rounded-2xl shadow-blue-card flex flex-col bg-surface-0">
-                    <div className="flex flex-col gap-2">
-                        {navbarData.map((section) => (
+        <nav className={cn('fixed top-0 left-0 right-0 z-[99999] border-b border-black/10 bg-white/80 backdrop-blur-md', className)} {...props}>
+            <div className="container flex items-center justify-between py-4 max-h-[75px]">
+                <Link href="/">
+                    <Logo />
+                </Link>
+                
+                <ul className="hidden lg:flex items-center gap-3">
+                    {navbarData.map((section) => (
+                        <li key={section.id}>
                             <Link 
-                                key={section.id} 
                                 href={section.to}
-                                className={`py-2 px-3 rounded-lg font-medium transition-all ${
-                                    pathname.startsWith(section.to)
-                                        ? 'text-surface-950 bg-surface-200'
-                                        : 'text-surface-500 hover:text-surface-950 hover:bg-surface-200'
+                                className={`inline-flex items-center gap-2 rounded-full py-2 px-4 select-none transition-all cursor-pointer text-base font-medium border ${
+                                    isLinkActive(section.to)
+                                        ? 'bg-black text-white border-black' // Active state
+                                        : 'text-black/70 border-transparent hover:bg-gray-200/80 hover:text-black' // Inactive state with hover
                                 }`}
                             >
                                 {section.title}
                             </Link>
-                        ))}
-                        <div className="border-t border-surface-200 my-2"></div>
-                        <Link 
-                            href="/second-pages/signup" 
-                            className="py-2 px-3 rounded-lg font-medium text-surface-500 hover:text-surface-950 hover:bg-surface-200"
-                        >
-                            Sign Up
-                        </Link>
-                    </div>
-                </DropdownMenuContent>
-            </DropdownMenu>
+                        </li>
+                    ))}
+                </ul>
+                
+                <DropdownMenu>
+                    <DropdownMenuTrigger className="lg:hidden w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-100 text-gray-800 hover:bg-gray-200">
+                        <i className="pi pi-bars"></i>
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent className="lg:hidden mt-2 mr-4 w-60 p-2 rounded-2xl shadow-lg bg-white/90 backdrop-blur-lg border border-gray-200/80">
+                        <div className="flex flex-col gap-1">
+                            {navbarData.map((section) => (
+                                <Link 
+                                    key={section.id} 
+                                    href={section.to}
+                                    className={`py-2 px-3 rounded-lg font-medium transition-all ${
+                                        isLinkActive(section.to)
+                                            ? 'text-black bg-gray-200'
+                                            : 'text-gray-600 hover:text-black hover:bg-gray-100'
+                                    }`}
+                                >
+                                    {section.title}
+                                </Link>
+                            ))}
+                            <div className="border-t border-gray-200 my-1"></div>
+                            <Link 
+                                href="/second-pages/signup" 
+                                className="py-2 px-3 rounded-lg font-medium text-gray-600 hover:text-black hover:bg-gray-100"
+                            >
+                                Sign Up
+                            </Link>
+                        </div>
+                    </DropdownMenuContent>
+                </DropdownMenu>
+            </div>
         </nav>
     );
 };
