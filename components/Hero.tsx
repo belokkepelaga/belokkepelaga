@@ -1,6 +1,7 @@
 'use client';
 import AnimatedContainer from './AnimatedContainer';
 // import Navbar from '@/components/Navbar';
+import BukanSponsor from './BukanSponsor';
 import Image from 'next/image';
 
 const Hero = () => {
@@ -20,6 +21,7 @@ const Hero = () => {
                     </div>
                     {/* <Navbar /> */}
                 </div>
+                <BukanSponsor className="mt-24 pb-24" labelClass="text-surface-500" iconClass="[&_path]:fill-surface-500" />
             </div>
         </AnimatedContainer>
     );

@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import CTA from '@/components/CTA';
-import MapSection from '@/components/MapSection';
+import PotretPengabdian from '@/components/PotretPengabdian';
+import MengenalDesa from '@/components/MengenalDesa';
 import Footer from '@/components/Footer';
 
 const HomePage: React.FC = () => {
@@ -10,8 +10,8 @@ const HomePage: React.FC = () => {
         <div className="min-h-screen">
             <Navbar />
             <Hero />
-            <CTA />
-            <MapSection />
+            <PotretPengabdian />
+            <MengenalDesa />
             <Footer />
         </div>
     );
