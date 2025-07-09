@@ -11,7 +11,8 @@ const config: Config = {
             backgroundImage: {
                 'main-gradient': 'var(--gradient-background)',
                 'main-gradient-to-top': 'var(--gradient-background-to-top)',
-                'main-gradient-to-left': 'var(--gradient-background-to-left)'
+                'main-gradient-to-left': 'var(--gradient-background-to-left)',
+                'footer-overlay-horizontal': 'var(--footer-overlay-horizontal)'
             },
             colors: {
                 /*Primary Colors*/
