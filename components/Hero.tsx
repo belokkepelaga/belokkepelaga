@@ -21,7 +21,7 @@ const Hero = () => {
                     </div>
                     {/* <Navbar /> */}
                 </div>
-                <BukanSponsor className="mt-24 pb-24" labelClass="text-surface-500" iconClass="[&_path]:fill-surface-500" />
+                <BukanSponsor className="mt-12 pb-12" labelClass="text-surface-500" iconClass="[&_path]:fill-surface-500" />
             </div>
         </AnimatedContainer>
     );
