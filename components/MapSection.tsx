@@ -3,7 +3,7 @@ import React from 'react';
 const MapSection: React.FC = () => {
     return (
         // A section container with a subtle background color to stand out
-        <section className="bg-gray-50 dark:bg-gray-900 py-12 sm:py-16">
+        <section className="bg-gray-50 dark:bg-gray-900 py- sm:py-16">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">

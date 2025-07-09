@@ -75,6 +75,9 @@ const config: Config = {
                 8: '8',
                 9: '9'
             },
+             fontFamily: {
+        poppins: ['Poppins'],
+      },
             fontSize: {
                 '8xl': '6rem'
             },
@@ -91,6 +94,7 @@ const config: Config = {
                 18: '4.5rem'
             },
             animation: {
+                 'moveRight': 'moveRight 20s linear infinite',
                 'infinite-scroll': 'infinite-scroll 40s linear infinite',
                 'cloud-idle': 'cloud-idle 60s infinite alternate'
             },
@@ -98,6 +102,10 @@ const config: Config = {
                 '600': '600ms'
             },
             keyframes: {
+                'moveRight': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
                 'infinite-scroll': {
                     from: { transform: 'translateX(0)' },
                     to: { transform: 'translateX(-100%)' }

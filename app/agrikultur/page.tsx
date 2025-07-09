@@ -1,9 +1,13 @@
 import React from 'react'
-
+import RagamTanaman from '@/components/RagamTanaman';
+import TernakDashboard from '@/components/TernakDashboard';
 const Agrikultur = () => {
   return (
-    <div>Ini Agrikultur</div>
-  )
+    <div className="min-h-screen bg-[#E0E0E0]">
+      <RagamTanaman />
+      <TernakDashboard />
+    </div>
+  );    
 }
 
-export default Agrikultur
+export default Agrikultur;
