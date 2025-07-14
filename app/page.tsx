@@ -5,7 +5,6 @@ import MisiAksi from '@/components/MisiAksi';
 import PotretPengabdian from '@/components/PotretPengabdian';
 import MengenalDesa from '@/components/MengenalDesa';
 import Footer from '@/components/Footer';
-
 const HomePage: React.FC = () => {
     return (
         <div className="min-h-screen">
