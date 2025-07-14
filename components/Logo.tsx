@@ -4,7 +4,7 @@ import React from 'react';
 const Logo: React.FC<React.HTMLAttributes<HTMLOrSVGElement>> = ({ className, ...props }) => {
     return (
         <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-            <g clip-path="url(#clip0_228_368)">
+            <g clipPath="url(#clip0_228_368)">
             <rect x="-5" y="-4" width="44" height="44" fill="url(#pattern0_228_368)"/>
             </g>
             <defs>
