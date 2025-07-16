@@ -37,14 +37,14 @@ const data = [
     {
         title: 'Mengenal Desa Belok/Sidan',
         text: [
-            'Desa Belok/sidan yang merupakan salah satu Desa yang berada di Kecamatan Petang, yang terletak + 21 Km dari Ibu Kota Kecamatan. Belok/Sidan memiliki luas wilayah 3.226 Km, yang terdiri dari 6 Desa adat dan 8 Banjar Dinas.',
+            'Desa Belok/Sidan dikelilingi oleh lahan pertanian, kebun kopi dan jeruk, serta kawasan hutan yang masih asri. Aktivitas masyarakat yang beragam seperti bertani, beternak menciptakan suasana desa yang dinamis dan kaya nilai budaya.',
         ],
         images: ['/potret-pengabdian/gua-maria-1.jpeg', '/potret-pengabdian/nungnung-1.jpeg', '/potret-pengabdian/gua-maria-2.jpeg']
     },
     {
         title: 'Mengenal Desa Pelaga',
         text: [
-            'Desa Pelaga termasuk Wilayah Kecamatan Petang, Kabupaten Badung yang memiliki potensi sumber daya  alam  dan sumber daya manusia maupun kelembagaan yang ditunjang oleh sarana prasarana. Desa Pelaga merupakan daerah dataran tinggi dengan luas tanah  yang ada  di Desa Pelaga  adalah 3.545,204 Ha, dengan ketinggian  700– 1.100 Meter.',
+            'Desa Pelaga terletak di dataran tinggi dengan ketinggian 700 hingga 1100 mdpl. Desa Pelaga memiliki kondisi alam yang sejuk dan lingkungan yang masih asri. Desa ini menyuguhkan suasana khas pegunungan dengan sumber daya alam yang melimpah.',
         ],
         images: ['/potret-pengabdian/upacara-1.jpeg', '/potret-pengabdian/tukad-bangkung-1.jpeg', '/potret-pengabdian/gua-maria-2.jpeg']
     }
