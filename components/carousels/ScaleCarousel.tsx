@@ -11,12 +11,13 @@ type PropType = {
     spacing?: string;
     size?: string;
     scale?: number;
+    showArrows?: boolean;
 };
 
 const numberWithinRange = (number: number, min: number, max: number): number => Math.min(Math.max(number, min), max);
 
 const ScaleCarousel: React.FC<PropType> = (props) => {
-    const { options, children, height = '25rem', spacing = '1rem', size = '40%', scale = 0.36 } = props;
+    const { options, children, height = '25rem', spacing = '1rem', size = '40%', scale = 0.36, showArrows } = props;
     const TWEEN_FACTOR_BASE = scale ?? 0.36;
     const [emblaRef, emblaApi] = useEmblaCarousel(options);
     const tweenFactor = useRef(0);
@@ -87,7 +88,7 @@ const ScaleCarousel: React.FC<PropType> = (props) => {
 
     return (
         <div
-            className="max-w-[102rem] m-auto relative"
+            className="max-w-[102rem] m-auto relative h-full"
             style={
                 {
                     '--slide-height': height,
@@ -96,16 +97,18 @@ const ScaleCarousel: React.FC<PropType> = (props) => {
                 } as React.CSSProperties
             }
         >
-            <div className="absolute h-full w-[25%] bg-[linear-gradient(to_right,white_12%,transparent_100%)] dark:bg-[linear-gradient(to_right,rgba(var(--surface-950))_12%,transparent_100%)] left-0 z-10 pointer-events-none lg:block hidden"></div>
-            <div className="absolute h-full w-[25%] bg-[linear-gradient(to_left,white_12%,transparent_100%)] dark:bg-[linear-gradient(to_left,rgba(var(--surface-950))_12%,transparent_100%)] right-0 z-10 pointer-events-none lg:block hidden"></div>
-            <div className="overflow-hidden" ref={emblaRef}>
-                <div className="flex ml-[calc(var(--slide-spacing)*-1)] py-8 touch-pan-y touch-pinch-zoom">{children}</div>
+            <div className="absolute h-full w-[5%] bg-[linear-gradient(to_right,white_12%,transparent_100%)] dark:bg-[linear-gradient(to_right,rgba(var(--surface-950))_12%,transparent_100%)] left-0 z-10 pointer-events-none lg:block hidden"></div>
+            <div className="absolute h-full w-[5%] bg-[linear-gradient(to_left,white_12%,transparent_100%)] dark:bg-[linear-gradient(to_left,rgba(var(--surface-950))_12%,transparent_100%)] right-0 z-10 pointer-events-none lg:block hidden"></div>
+            <div className="overflow-hidden h-full" ref={emblaRef}>
+                <div className="flex ml-[calc(var(--slide-spacing)*-1)] py-8 touch-pan-y touch-pinch-zoom h-full">{children}</div>
             </div>
 
-            <div className="mt-8 mx-auto w-fit flex items-center gap-6">
-                <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-                <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
-            </div>
+            {showArrows && (
+                <div className="absolute left-1/2 -translate-x-1/2 z-20 flex gap-4">
+                    <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+                    <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+                </div>
+            )}
         </div>
     );
 };
