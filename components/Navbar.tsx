@@ -86,7 +86,7 @@ export default Navbar;
 // Navigation items
 const navbarData = [
   { id: 'beranda', title: 'Beranda', to: '/' },
-  { id: 'berita', title: 'Berita', to: '/berita' },
+  { id: 'artikel', title: 'Artikel', to: '/artikel' },
   { id: 'pariwisata', title: 'Pariwisata', to: '/pariwisata' },
   { id: 'agrikultur', title: 'Agrikultur', to: '/agrikultur' },
   { id: 'informasi-desa', title: 'Informasi Desa', to: '/informasi-desa' }

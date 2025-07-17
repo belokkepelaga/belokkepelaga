@@ -99,8 +99,8 @@ const footerNavsData = [
                 to: '/'
             },
             {
-                label: 'Berita',
-                to: '/berita'
+                label: 'Artikel',
+                to: '/artikel'
             },
             {
                 label: 'Pariwisata',
