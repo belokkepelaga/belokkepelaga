@@ -4,9 +4,6 @@ import Link from 'next/link';
 import React from 'react';
 import AnimatedContainer from './AnimatedContainer';
 import CirclePattern from './CirclePattern';
-import Logo from './Logo';
-import { icon } from 'leaflet';
-import { link } from 'fs';
 
 type FooterProps = {
     image?: string;
