@@ -10,7 +10,7 @@ export default function MisiDanAksi() {
           alt="Foto Kegiatan Masyarakat"
           width={400}
           height={200}
-          className="shadow-lg object-cover"
+          className="shadow-lg object-cover rounded-4xl"
         />
       </div>
 

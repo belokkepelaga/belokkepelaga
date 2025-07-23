@@ -8,23 +8,32 @@ export default function PotretPengabdian() {
         {/* Membungkus gambar dalam div untuk animasi */}
         <div className="flex animate-moveRight">
           {/* Set pertama gambar */}
-          <img src="/Misi.jpeg" alt="Image 1" className="w-full max-w-xs mx-2" />
-          <img src="/Misi.jpeg" alt="Image 2" className="w-full max-w-xs mx-2" />
-          <img src="/Misi.jpeg" alt="Image 3" className="w-full max-w-xs mx-2" />
-          <img src="/Misi.jpeg" alt="Image 4" className="w-full max-w-xs mx-2" />
-          <img src="/Misi.jpeg" alt="Image 5" className="w-full max-w-xs mx-2" />
-          <img src="/Misi.jpeg" alt="Image 6" className="w-full max-w-xs mx-2" />
-          <img src="/Misi.jpeg" alt="Image 7" className="w-full max-w-xs mx-2" />
-          
+<img src="/Misi.jpeg" alt="Image 1" className="w-[150px] mx-2" />
+<img src="/Misi.jpeg" alt="Image 1" className="w-[150px] mx-2" />
+<img src="/Misi.jpeg" alt="Image 1" className="w-[150px] mx-2" />
+<img src="/Misi.jpeg" alt="Image 1" className="w-[150px] mx-2" />
+<img src="/Misi.jpeg" alt="Image 1" className="w-[150px] mx-2" />
+<img src="/Misi.jpeg" alt="Image 1" className="w-[150px] mx-2" />
+<img src="/Misi.jpeg" alt="Image 1" className="w-[150px] mx-2" />
+<img src="/Misi.jpeg" alt="Image 1" className="w-[150px] mx-2" />
+<img src="/Misi.jpeg" alt="Image 1" className="w-[150px] mx-2" />
+<img src="/Misi.jpeg" alt="Image 1" className="w-[150px] mx-2" />
+
+
           {/* Set kedua gambar (untuk loop) */}
-          <img src="/Misi.jpeg" alt="Image 1" className="w-full max-w-xs mx-2" />
-          <img src="/Misi.jpeg" alt="Image 2" className="w-full max-w-xs mx-2" />
-          <img src="/Misi.jpeg" alt="Image 3" className="w-full max-w-xs mx-2" />
-          <img src="/Misi.jpeg" alt="Image 4" className="w-full max-w-xs mx-2" />
-          <img src="/Misi.jpeg" alt="Image 5" className="w-full max-w-xs mx-2" />
-          <img src="/Misi.jpeg" alt="Image 6" className="w-full max-w-xs mx-2" />
-          <img src="/Misi.jpeg" alt="Image 7" className="w-full max-w-xs mx-2" />
-        </div>
+ <img src="/Misi.jpeg" alt="Image 1" className="w-[150px] mx-2" />
+<img src="/Misi.jpeg" alt="Image 1" className="w-[150px] mx-2" />
+<img src="/Misi.jpeg" alt="Image 1" className="w-[150px] mx-2" />
+<img src="/Misi.jpeg" alt="Image 1" className="w-[150px] mx-2" />
+<img src="/Misi.jpeg" alt="Image 1" className="w-[150px] mx-2" />
+<img src="/Misi.jpeg" alt="Image 1" className="w-[150px] mx-2" />
+<img src="/Misi.jpeg" alt="Image 1" className="w-[150px] mx-2" />
+<img src="/Misi.jpeg" alt="Image 1" className="w-[150px] mx-2" />
+<img src="/Misi.jpeg" alt="Image 1" className="w-[150px] mx-2" />
+<img src="/Misi.jpeg" alt="Image 1" className="w-[150px] mx-2" />
+
+
+       </div>
       </div>
     </div>
   );

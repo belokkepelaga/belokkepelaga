@@ -29,7 +29,7 @@ const dataWisata: Wisata[] = [
     name: "Goa",
     coords: [-8.280931184444741, 115.21809758003151],
     image: "/Misi.jpeg",
-    desc: "Goa alam yang eksotis di Desa Pelaga. Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.",
+    desc : "Goa alam yang eksotis di Desa Pelaga. Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga. Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga."
   },
   {
     name: "Pura Puncak Mangu",
@@ -59,57 +59,56 @@ export default function App() {
       <h1 className="text-3xl font-bold text-center mb-3">
         Jelajah Wisata 
       </h1>
-       <h1 className="text-3xl font-bold text-center mb-10 text-pink-600 ">
-        Desa Pelaga 
+      <h1 className="text-3xl font-bold text-center mb-10 text-pink-600">
+        Desa Pelaga
       </h1>
 
-     <div className="flex flex-col md:flex-row w-full max-w-6xl gap-8">
-  {/* Peta di atas saat mobile, kiri saat desktop */}
-  <div className="flex-1 order-1 md:order-none">
-    <MapContainer
-      center={[-8.29, 115.22]}
-      zoom={13}
-      scrollWheelZoom={false}
-      className="rounded-md h-[400px] w-full"
-    >
-      <TileLayer
-        attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a>'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
-      {dataWisata.map((item, index) => (
-        <Marker
-          key={index}
-          position={item.coords}
-          eventHandlers={{
-            click: () => setSelected(item),
-          }}
-        />
-      ))}
-    </MapContainer>
-  </div>
+      <div className="flex flex-col md:flex-row w-full max-w-6xl gap-8">
+        {/* Kiri: Info atau Deskripsi */}
+        <div className="flex-1">
+          {selected ? (
+            <div className="bg-white p-5 rounded-xl shadow-md border border-[#e5e5e5]">
+              <h2 className="text-lg font-semibold mb-3">{selected.name}</h2>
+              <div className="flex gap-4 items-start">
+                <img
+                  src={selected.image}
+                  alt={selected.name}
+                  className="w-[100px] h-[100px] object-cover rounded-md"
+                />
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  {selected.desc}
+                </p>
+              </div>
+            </div>
+          ) : (
+            <p className="text-lg text-gray-800">Yuk, Klik Pin Wisata!</p>
+          )}
+        </div>
 
-  {/* Info di bawah saat mobile, kanan saat desktop */}
-  <div className="flex-1 order-2 md:order-none">
-    {selected ? (
-      <div className="bg-white p-5 rounded-xl shadow-md border border-[#e5e5e5]">
-        <h2 className="text-lg font-semibold mb-3">{selected.name}</h2>
-        <div className="flex gap-4 items-start">
-          <img
-            src={selected.image}
-            alt={selected.name}
-            className="w-[100px] h-[100px] object-cover rounded-md"
-          />
-          <p className="text-sm text-gray-700 leading-relaxed">
-            {selected.desc}
-          </p>
+        {/* Kanan: Peta */}
+        <div className="flex-1">
+          <MapContainer
+            center={[-8.29, 115.22]}
+            zoom={13}
+            scrollWheelZoom={false}
+            className="rounded-md h-[400px] w-full"
+          >
+            <TileLayer
+              attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a>'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            {dataWisata.map((item, index) => (
+              <Marker
+                key={index}
+                position={item.coords}
+                eventHandlers={{
+                  click: () => setSelected(item),
+                }}
+              />
+            ))}
+          </MapContainer>
         </div>
       </div>
-    ) : (
-      <p className="text-lg text-gray-800">Yuk, Klik Pin Wisata!</p>
-    )}
-  </div>
-</div>
-
     </div>
   );
 }
