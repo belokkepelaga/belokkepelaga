@@ -1,4 +1,3 @@
-import { useMemo } from 'react';
 import { getMDXComponent } from 'mdx-bundler/client';
 import BlogDetailHero from '@/components/artikel/detail/Hero';
 import Footer from '@/components/Footer';
@@ -23,7 +22,7 @@ const ArtikelDetailPage = async ({ params }: { params: { slug: string } }) => {
     return (
         <>
             <BlogDetailHero frontmatter={frontmatter} />
-            <div className="container prose lg:prose-xl dark:prose-invert mx-auto py-12">
+            <div className="prose lg:prose-xl mx-auto py-12 max-w-4xl px-4">
                 <Component />
             </div>
             <Footer />

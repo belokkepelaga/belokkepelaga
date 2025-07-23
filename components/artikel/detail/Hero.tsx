@@ -6,14 +6,14 @@ import Image from 'next/image';
 
 const ArtikelDetailHero = ({ frontmatter }: { frontmatter: any }) => {
     return (
-        <AnimatedContainer visibleClass="!slide-in-from-top-0" className="pt-6">
+        <AnimatedContainer visibleClass="!slide-in-from-top-0">
             <div className="container relative">
-                <div className="h-[51.5rem] absolute top-0 left-4 right-4 bg-main-gradient rounded-3xl lg:rounded-4xl">
+                <div className="h-[45rem] lg:h-[51.5rem] absolute top-0 bg-main-gradient w-screen left-1/2 -translate-x-1/2">
                     <div className="absolute inset-0 overflow-hidden lg:block hidden">
-                        <CirclePattern className="absolute w-[82rem] -bottom-full translate-y-24 left-1/2 -translate-x-1/2" />
+                        <CirclePattern className="absolute w-[82rem] -bottom-full -translate-y-24" />
                     </div>
                 </div>
-                <div className="relative z-20">
+                <div className="relative z-20 pt-20">
                     <Navbar />
                     <h1 className="max-w-[calc(100%-3rem)] lg:max-w-5xl mx-auto title lg:text-6xl text-4xl text-center mt-18">{frontmatter.title}</h1>
                     <p className="mt-6 max-w-[calc(100%-3rem)] lg:max-w-4xl text-lg lg:text-xl text-white/64 text-center mx-auto">
