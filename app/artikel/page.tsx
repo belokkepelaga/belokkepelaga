@@ -1,12 +1,14 @@
-import BlogHero from '@/components/artikel/Hero';
-import BlogList from '@/components/artikel/List';
+import ArtikelHero from '@/components/artikel/Hero';
+import ArtikelList from '@/components/artikel/List';
 import Footer from '@/components/Footer';
+import { getAllArticles } from '@/lib/mdx';
 
 const ArtikelPage = () => {
+    const articles = getAllArticles();
     return (
         <>
-            <BlogHero />
-            <BlogList />
+            <ArtikelHero />
+            <ArtikelList articles={articles} />
             <Footer className="mt-24 lg:mt-64" />
         </>
     );

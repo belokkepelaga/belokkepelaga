@@ -16,9 +16,9 @@ const ArtikelHero = () => {
                 </div>
                 <div className="relative z-20">
                     <Navbar />
-                    <h1 className="max-w-[calc(100%-3rem)] lg:max-w-5xl mx-auto title lg:text-6xl text-4xl text-center mt-18">SaaS Solutions and Pricing Strategies for Startups in 2024</h1>
-                    <p className="mt-6 max-w-[calc(100%-3rem)] lg:max-w-3xl text-lg lg:text-xl text-white/64 text-center mx-auto">
-                        Explore the latest SaaS solutions and standout pricing strategies for this year. Learn how to reduce costs while strengthening customer relationships for your business.
+                    <h1 className="max-w-[calc(100%-3rem)] lg:max-w-5xl mx-auto title lg:text-6xl text-4xl text-center mt-18">Artikel</h1>
+                    <p className="mt-6 max-w-[calc(100%-3rem)] lg:max-w-3xl text-lg lg:text-xl text-black text-center mx-auto">
+                        Cerita kami, tim KKN-PPM UGM Belok ke Pelaga 2025
                     </p>
                 </div>
                 <div className="relative z-10 h-[35rem] max-w-[calc(100%-3rem)] lg:max-w-[calc(100%-12rem) mt-20 lg:mt-40 mx-auto rounded-4xl shadow-black-card overflow-hidden">

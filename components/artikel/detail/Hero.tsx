@@ -4,7 +4,7 @@ import CirclePattern from '@/components/CirclePattern';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 
-const ArtikelDetailHero = () => {
+const ArtikelDetailHero = ({ frontmatter }: { frontmatter: any }) => {
     return (
         <AnimatedContainer visibleClass="!slide-in-from-top-0" className="pt-6">
             <div className="container relative">
@@ -15,13 +15,13 @@ const ArtikelDetailHero = () => {
                 </div>
                 <div className="relative z-20">
                     <Navbar />
-                    <h1 className="max-w-[calc(100%-3rem)] lg:max-w-5xl mx-auto title lg:text-6xl text-4xl text-center mt-18">SaaS Solutions for Small Businesses: What to Expect in 2024</h1>
+                    <h1 className="max-w-[calc(100%-3rem)] lg:max-w-5xl mx-auto title lg:text-6xl text-4xl text-center mt-18">{frontmatter.title}</h1>
                     <p className="mt-6 max-w-[calc(100%-3rem)] lg:max-w-4xl text-lg lg:text-xl text-white/64 text-center mx-auto">
-                        Discover SaaS solutions that help small businesses automate processes, reduce costs, and improve customer relationships. Learn about the top SaaS trends for small businesses in 2024.
+                        {frontmatter.description}
                     </p>
                 </div>
                 <div className="relative z-10 h-[35rem] max-w-[calc(100%-3rem)] lg:max-w-[calc(100%-12rem)] mt-16 lg:mt-40 mx-auto rounded-4xl shadow-black-card overflow-hidden">
-                    <Image fill sizes="auto" className="object-cover" src={'/pages/blog/blog-hero.jpg'} alt="Blog Hero Image" />
+                    <Image fill sizes="auto" className="object-cover" src={frontmatter.image} alt="Blog Hero Image" />
                 </div>
             </div>
         </AnimatedContainer>
