@@ -55,7 +55,7 @@ export default function App() {
   const [selected, setSelected] = useState<Wisata | null>(null);
 
   return (
-    <div className="min-h-screen bg-[#f8f3e8] py-10 px-8 flex flex-col items-center">
+    <div className="min-h-screen py-10 px-8 flex flex-col items-center">
       <h1 className="text-3xl font-bold text-center mb-3">
         Jelajah Wisata 
       </h1>
