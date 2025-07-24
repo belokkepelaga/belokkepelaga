@@ -22,9 +22,7 @@ const Footer: React.FC<React.HTMLAttributes<HTMLElement> & FooterProps> = ({ cla
                             <div className="absolute z-1 inset-0 bg-footer-overlay-horizontal" />
                             <Image className="object-cover -z-2" fill sizes="auto" src={image} alt="Footer Image" />
                         </>
-                    ) : !transparent ? (
-                        <CirclePattern className="absolute -bottom-12 opacity-50 translate-y-1/2 w-[50rem] lg:w-[80rem] -translate-x-1/2 left-1/2" />
-                    ) : null}
+                    ) : null }
                     <div className="max-w-[80rem] mx-auto flex lg:flex-row flex-col">
                         <div className="flex-1 flex flex-col justify-between gap-4 py-4 lg:px-0 px-4">
                             <div className="flex items-center gap-6">
@@ -34,7 +32,7 @@ const Footer: React.FC<React.HTMLAttributes<HTMLElement> & FooterProps> = ({ cla
                                 <Link href="https://kkn.ugm.ac.id/" target="_blank">
                                     <Image width={64} height={64} src="/logo/footer/logo-kkn.svg" alt="Logo KKN" />
                                 </Link>
-                                <Link href="https://instagram.com/belokkepelaga" target="_blank">
+                                <Link href="/" target="_blank">
                                     <Image width={64} height={64} src="/logo/footer/logo-tim.svg" alt="Logo Tim" />
                                 </Link>
                             </div>
