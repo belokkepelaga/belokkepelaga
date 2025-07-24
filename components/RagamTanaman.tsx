@@ -66,6 +66,22 @@ const tanamanData: CardProps[] = [
     image: '/images/asparagus.jpg',
     imagePosition: 'right',
   },
+  {
+    title: 'Tanaman Asparagus',
+    latinName: 'Asparagus officinalis',
+    status: 'Sayuran hijau kaya manfaat',
+    description: 'Asparagus kaya akan vitamin dan mineral, tumbuh baik di dataran tinggi. (deskripsi panjang)',
+    image: '/images/asparagus.jpg',
+    imagePosition: 'left',
+  },
+  {
+    title: 'Tanaman Asparagus',
+    latinName: 'Asparagus officinalis',
+    status: 'Sayuran hijau kaya manfaat',
+    description: 'Asparagus kaya akan vitamin dan mineral, tumbuh baik di dataran tinggi. (deskripsi panjang)',
+    image: '/images/asparagus.jpg',
+    imagePosition: 'right',
+  },
 ];
 
 const Agrikultur: React.FC = () => {

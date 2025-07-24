@@ -2,10 +2,9 @@ import React from "react";
 
 const Geografis = () => {
   return (
-    <section className="mt-10 p-10 bg-white rounded-xl text-black">
+    <section className=" p-10 bg-[#F1EBDB] rounded-xl text-black">
       {/* Judul tetap kiri */}
-      <h2 className="text-2xl font-bold mb-6 ml-20">Geografi</h2>
-
+  <h2 className="text-2xl font-bold text-center md:text-left md:ml-20">Geografis</h2>
       {/* Konten di tengah */}
       <div className="flex justify-center">
         <div className="flex flex-col md:flex-row md:gap-2 gap-2 items-start justify-center text-center flex-wrap">
@@ -16,7 +15,7 @@ const Geografis = () => {
               src="/Misi.jpeg"
               alt="Peta Belok/Sidan"
               className="object-contain"
-              style={{ width: "500px", height: "500px" }}
+              style={{ width: "500px", height: "450px" }}
             />
           </div>
 

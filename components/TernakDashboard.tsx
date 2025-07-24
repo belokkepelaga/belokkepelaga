@@ -1,106 +1,99 @@
-'use client';
-import { PieChart, Pie, Cell } from 'recharts';
+"use client";
+import React from "react";
+import { PieChart, Pie, Cell } from "recharts";
 
-const COLORS = ['#9ABD98', '#E0E0E0'];
+const COLORS = ["#C3AA69", "#1C5838", '#9ABD98'];
 
-const dataJenisKelamin = [
-  { name: 'Jantan', value: 350 },
-  { name: 'Betina', value: 150 },
+const dataVaksin = [
+  { name: "Sudah", value: 21 },
+  { name: "Belum", value: 12},
 ];
 
-const dataVaksinasi = [
-  { name: 'Sudah Vaksin', value: 400 },
-  { name: 'Belum Vaksin', value: 100 },
+const dataDisinfektan = [
+  { name: "Rutin", value: 24 },
+  { name: "Jarang", value: 6 },
+  {name: "Tidak Pernah", value: 6}
 ];
 
-type ChartProps = {
-  title: string;
-  data: { name: string; value: number }[];
-  size?: number; // untuk mengatur ukuran chart (opsional)
+type DataItem = {
+  name: string;
+  value: number;
 };
 
-const Chart = ({ title, data, size = 160 }: ChartProps) => (
-  <div className="text-center mb-6">
-    <h4 className="text-sm font-semibold mb-2">{title}</h4>
+type ChartBoxProps = {
+  title: string;
+  data: DataItem[];
+};
 
-    {/* Chart */}
-    <div className="flex justify-center">
-      <PieChart width={size} height={size}>
-        <Pie
-          data={data}
-          cx="50%"
-          cy="50%"
-          outerRadius={size / 2.8}
-          dataKey="value"
-        >
-          {data.map((_, index) => (
-            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-          ))}
-        </Pie>
-      </PieChart>
-    </div>
+const ChartBox: React.FC<ChartBoxProps> = ({ title, data }) => {
+  const total = data.reduce((acc, item) => acc + item.value, 0);
 
-    {/* Legend */}
-    <div className="mt-2 flex justify-center flex-col items-center gap-1 text-sm">
-      {data.map((entry, index) => (
-        <div key={index} className="flex items-center gap-2">
-          <div
-            className="w-3 h-3 rounded-full"
-            style={{ backgroundColor: COLORS[index % COLORS.length] }}
-          />
-          <span>
-            {entry.name}: <strong>{entry.value}</strong>
-          </span>
-        </div>
-      ))}
-    </div>
-  </div>
-);
-
-const DesaSection = ({
-  namaDesa,
-  totalPopulasi,
-  dataKelamin,
-  dataVaksin,
-}: {
-  namaDesa: string;
-  totalPopulasi: number;
-  dataKelamin: any[];
-  dataVaksin: any[];
-}) => (
-  <div className="flex flex-col items-center">
-    {/* Nama Desa */}
-    <h2 className="text-[#C4A763] font-bold text-lg mb-2">{namaDesa}</h2>
-
-    {/* Box putih total populasi */}
-    <div className="bg-white rounded-lg shadow px-6 py-3 mb-4 text-center">
-      <p>Total Populasi: <span className="font-bold">{totalPopulasi}</span></p>
-    </div>
-
-    {/* Box putih isi chart */}
-    <div className="bg-white rounded-xl shadow-md px-6 py-6 w-[300px]">
-      <Chart title="Berdasarkan Jenis Kelamin" data={dataKelamin} />
-      <Chart title="Berdasarkan status vaksinasi" data={dataVaksin} />
-    </div>
-  </div>
-);
-
-export default function PendataanTernak() {
   return (
-    <div className="bg-[#E0E0E0] min-h-screen py-10 px-4">
-      <h1 className="text-center text-2xl font-semibold mb-10">Pendataan Ternak</h1>
-      <div className="flex flex-wrap justify-center gap-12">
-        <DesaSection
-          namaDesa="Desa Belok Sidan"
-          totalPopulasi={500}
-          dataKelamin={dataJenisKelamin}
-          dataVaksin={dataVaksinasi}
+    <div className="bg-white rounded-2xl p-6 shadow w-full max-w-sm">
+      <h4 className="text-center text-[14px] font-semibold mb-4 leading-tight">
+        {title}
+      </h4>
+
+      <div className="flex justify-center">
+        <PieChart width={160} height={160}>
+          <Pie
+            data={data}
+            cx="50%"
+            cy="50%"
+            outerRadius={70}
+            dataKey="value"
+          >
+            {data.map((_, index) => (
+              <Cell
+                key={`cell-${index}`}
+                fill={COLORS[index % COLORS.length]}
+              />
+            ))}
+          </Pie>
+        </PieChart>
+      </div>
+
+      {/* Legend + Value */}
+      <div className="flex flex-col items-center gap-1 mt-4 text-sm">
+        {data.map((entry, index) => (
+          <div key={index} className="flex items-center gap-2">
+            <div
+              className="w-3 h-3 rounded-full"
+              style={{ backgroundColor: COLORS[index % COLORS.length] }}
+            />
+            <span>{entry.name}: {entry.value} ekor</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default function DesaBelokSidanTernak() {
+  return (
+    <div className="bg-[#F1EBDB] min-h-screen px-6 md:px-16 py-8">
+      {/* Header Section */}
+       <div className="flex flex-wrap justify-between items-center px-4 md:px-44 mb-10">
+  <h2 className="text-xl font-bold leading-snug">
+    Pendataan Populasi Ternak <br className="block md:hidden" />
+    Desa Belok/Sidan
+  </h2>
+
+  <div className="bg-white px-4 py-2 rounded-lg shadow text-[15px] font-medium mt-2 md:mt-0">
+    Jumlah Sapi yang Didata: <span className="font-bold text-black">30</span>
+  </div>
+</div>
+
+
+      {/* Chart Section */}
+      <div className="flex flex-wrap justify-center gap-6">
+        <ChartBox
+          title="Status Vaksin PMK (Penyakit Mulut dan Kuku) pada Sapi"
+          data={dataVaksin}
         />
-        <DesaSection
-          namaDesa="Desa Pelaga"
-          totalPopulasi={500}
-          dataKelamin={dataJenisKelamin}
-          dataVaksin={dataVaksinasi}
+        <ChartBox
+          title="Penggunaan Disinfektan oleh Peternak Sapi"
+          data={dataDisinfektan}
         />
       </div>
     </div>
