@@ -15,7 +15,6 @@ const ArtikelHero = ({ article }: { article: { slug: string, frontmatter: any } 
                     </div>
                 </div>
                 <div className="relative z-20 pt-20">
-                    <Navbar />
                     <h1 className="max-w-[calc(100%-3rem)] lg:max-w-5xl mx-auto title lg:text-6xl text-4xl text-center mt-18">Artikel</h1>
                     <p className="mt-6 max-w-[calc(100%-3rem)] lg:max-w-3xl text-lg lg:text-xl text-black text-center mx-auto">
                         Cerita kami, tim KKN-PPM UGM Belok ke Pelaga 2025
