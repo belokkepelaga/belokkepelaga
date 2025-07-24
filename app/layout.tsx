@@ -14,6 +14,12 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+const pinyonScript = localFont({
+  src: "./fonts/PinyonScript-Regular.ttf",
+  variable: "--font-pinyon-script",
+  weight: "400",
+});
+
 export const metadata: Metadata = {
   title: "Belok ke Pelaga",
   description: "KKN-PPM UGM Belok ke Pelaga 2025",
@@ -27,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="id">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${pinyonScript.variable} antialiased`}
       >
         <Navbar />
         {children}

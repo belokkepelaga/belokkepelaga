@@ -1,7 +1,6 @@
 'use client';
 import AnimatedContainer from '@/components/AnimatedContainer';
 import CirclePattern from '@/components/CirclePattern';
-import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 
 const ArtikelDetailHero = ({ frontmatter }: { frontmatter: any }) => {
@@ -14,7 +13,6 @@ const ArtikelDetailHero = ({ frontmatter }: { frontmatter: any }) => {
                     </div>
                 </div>
                 <div className="relative z-20 pt-20">
-                    <Navbar />
                     <h1 className="max-w-[calc(100%-3rem)] lg:max-w-5xl mx-auto title lg:text-6xl text-4xl text-center mt-18">{frontmatter.title}</h1>
                     <p className="mt-6 max-w-[calc(100%-3rem)] lg:max-w-4xl text-lg lg:text-xl text-white/64 text-center mx-auto">
                         {frontmatter.description}

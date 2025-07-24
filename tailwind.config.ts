@@ -81,7 +81,12 @@ const config: Config = {
         poppins: ['Poppins'],
       },
             fontSize: {
-                '8xl': '6rem'
+                '8xl': '6rem',
+                '12xl': '12rem',
+                '24rem': '24rem',
+            },
+            fontFamily: {
+                'pinyon': ['var(--font-pinyon-script)'],
             },
             gap: {
                 18: '4.5rem'
