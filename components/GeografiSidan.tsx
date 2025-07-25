@@ -23,18 +23,13 @@ const Geografis = () => {
           <div className="text-left">
             <div className="mb-6">
               <h3 className="text-green-900 font-semibold text-lg mb-2">
-                Banjar Dinas Belok/Sidan
+                Batas Wilayah
               </h3>
               <ol className="list-decimal list-inside text-sm space-y-1">
-                <li>Banjar Dinas Penikit</li>
-                <li>Banjar Dinas Sidan</li>
-                <li>Banjar Dinas Selantang</li>
-                <li>Banjar Dinas Belok</li>
-                <li>Banjar Dinas Lawak</li>
-                <li>Banjar Dinas Bon</li>
-                <li>Banjar Dinas Jempanang</li>
-                <li>Banjar Dinas Sekar Mukti</li>
-                <li>Banjar Dinas Sidan Kawan</li>
+                <li>Batas Utara: Desa Catur, Kabupaten Bangli dan Desa Tambakan, Kabupaten Buleleng</li>
+                <li>Batas Selatan: Desa Petang</li>
+                <li>Batas Timur: Desa Mangani, Kabupaten Bangli</li>
+                <li>Batas Barat: Desa Pelaga</li>
               </ol>
             </div>
 

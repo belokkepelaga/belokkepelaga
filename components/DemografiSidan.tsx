@@ -3,7 +3,7 @@ import { FaMale, FaFemale } from "react-icons/fa";
 
 const Demografi = () => {
   return (
-  <section className="mt-20 p-10 bg-[#F1EBDB] rounded-xl text-black">
+  <section className=" p-10 bg-[#F1EBDB] rounded-xl text-black">
      <h1 className="text-3xl font-bold text-center mb-4 text-[#09371F]">
         Desa Belok/Sidan
       </h1>

@@ -25,12 +25,20 @@ interface Wisata {
 }
 
 const dataWisata: Wisata[] = [
-  {
-    name: "Goa",
-    coords: [-8.280931184444741, 115.21809758003151],
-    image: "/Misi.jpeg",
-    desc: "Goa alam yang eksotis di Desa Pelaga. Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.Goa alam yang eksotis di Desa Pelaga.",
-  },
+{
+  name: "Bali Beans",
+  coords: [-8.255907621640755, 115.24510950837026],
+  image: "/Misi.jpeg",
+  desc: `Bali Beans Plantation Desa Belok/Sidan merupakan atraksi wisata edukasi kopi yang terletak di Desa Belok/Sidan, tepatnya di Banjar Lawak, Kecamatan Petang, Badung. Bali Beans Plantation adalah usaha keluarga sejak tahun 1985 yang sekarang dikelola oleh anaknya. 
+
+Kebun kopi di Bali Beans Plantation seluas 4 hektar ini ditanami kopi jenis Arabika. Selain itu, Bali Beans juga menjual kopi hasil produksinya ke berbagai kafe di daerah Kintamani, Karangasem, dan wilayah Bali lainnya. 
+
+Bali Beans Plantation menawarkan pengalaman “coffee journey” yang lengkap, mulai dari pengenalan kebun kopi, proses panen biji, pengolahan manual, hingga roasting dan cupping kopi dengan cita rasa khas Arabika pegunungan. 
+
+Wisatawan dapat mengikuti tur kebun kopi, pelatihan roasting manual, belajar teknik seduh kopi tradisional, serta menikmati kopi sambil menyaksikan pemandangan perbukitan yang asri. Biaya untuk tour kebun adalah Rp170.000/orang dan Rp50.000/orang untuk sesi cupping kopi. 
+
+Area plantation dilengkapi dengan jalur kebun, tempat duduk outdoor, serta area edukasi yang nyaman untuk kegiatan studi lapangan dan wisata keluarga. Bali Beans Plantation menjadi salah satu atraksi unggulan Desa Wisata Belok/Sidan dalam mengangkat wisata agro-edukasi kopi berkelanjutan dan pemberdayaan petani lokal.`,
+},
   {
     name: "Pura Puncak Mangu",
     coords: [-8.254372188195106, 115.1904433961847],

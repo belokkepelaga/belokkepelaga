@@ -2,17 +2,17 @@
 import React from "react";
 import { PieChart, Pie, Cell } from "recharts";
 
-const COLORS = ["#C3AA69", "#1C5838", '#9ABD98'];
+const COLORS = ['#9ABD98', "#62875F", "#1C5838",];
 
 const dataVaksin = [
-  { name: "Sudah", value: 21 },
-  { name: "Belum", value: 12},
+  { name: "Sudah pernah", value: 2 },
+  { name: "Belum pernah", value: 115},
 ];
 
 const dataDisinfektan = [
-  { name: "Rutin", value: 24 },
+  { name: "Rutin", value: 0 },
   { name: "Jarang", value: 6 },
-  {name: "Tidak Pernah", value: 6}
+  {name: "Tidak Pernah", value: 110}
 ];
 
 type DataItem = {
@@ -24,6 +24,36 @@ type ChartBoxProps = {
   title: string;
   data: DataItem[];
 };
+
+const renderCustomizedLabel = ({
+  cx,
+  cy,
+  midAngle,
+  innerRadius,
+  outerRadius,
+  percent,
+  index
+}: any) => {
+  const RADIAN = Math.PI / 180;
+  const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
+  const x = cx + radius * Math.cos(-midAngle * RADIAN);
+  const y = cy + radius * Math.sin(-midAngle * RADIAN);
+
+  return (
+    <text
+      x={x}
+      y={y}
+      fill="white"
+      textAnchor="middle"
+      dominantBaseline="central"
+      fontSize={12}
+      fontWeight={600}
+    >
+      {`${(percent * 100).toFixed(0)}%`}
+    </text>
+  );
+};
+
 
 const ChartBox: React.FC<ChartBoxProps> = ({ title, data }) => {
   const total = data.reduce((acc, item) => acc + item.value, 0);
@@ -37,19 +67,22 @@ const ChartBox: React.FC<ChartBoxProps> = ({ title, data }) => {
       <div className="flex justify-center">
         <PieChart width={160} height={160}>
           <Pie
-            data={data}
-            cx="50%"
-            cy="50%"
-            outerRadius={70}
-            dataKey="value"
-          >
-            {data.map((_, index) => (
-              <Cell
-                key={`cell-${index}`}
-                fill={COLORS[index % COLORS.length]}
-              />
-            ))}
-          </Pie>
+  data={data}
+  cx="50%"
+  cy="50%"
+  outerRadius={70}
+  dataKey="value"
+  label={renderCustomizedLabel} // << Tambahkan ini
+  labelLine={false} // << Opsional: menghilangkan garis label
+>
+  {data.map((_, index) => (
+    <Cell
+      key={`cell-${index}`}
+      fill={COLORS[index % COLORS.length]}
+    />
+  ))}
+</Pie>
+
         </PieChart>
       </div>
 
@@ -71,16 +104,16 @@ const ChartBox: React.FC<ChartBoxProps> = ({ title, data }) => {
 
 export default function DesaBelokSidanTernak() {
   return (
-    <div className="bg-[#F1EBDB] min-h-screen px-6 md:px-16 py-8">
+    <div className="bg-[#F1EBDB]  px-6 md:px-16 py-8">
       {/* Header Section */}
        <div className="flex flex-wrap justify-between items-center px-4 md:px-44 mb-10">
   <h2 className="text-xl font-bold leading-snug">
     Pendataan Populasi Ternak <br className="block md:hidden" />
-    Desa Belok/Sidan
+    Desa Belok/Sidan (Selantang)
   </h2>
 
   <div className="bg-white px-4 py-2 rounded-lg shadow text-[15px] font-medium mt-2 md:mt-0">
-    Jumlah Sapi yang Didata: <span className="font-bold text-black">30</span>
+    Jumlah Sapi yang Didata: <span className="font-bold text-black">117</span>
   </div>
 </div>
 
@@ -99,3 +132,4 @@ export default function DesaBelokSidanTernak() {
     </div>
   );
 }
+

@@ -6,7 +6,7 @@ import PetaPelaga from '@/components/PetaPelaga'
 
 const Pariwisata = () => {
     return (
-        <div className='mt-10'>
+    <div className="bg-[#F1EBDB] ">
             {/* <MapSection /> */}
             <PetaSidan />
             <MapSection />
