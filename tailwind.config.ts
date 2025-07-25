@@ -129,6 +129,7 @@ const config: Config = {
     plugins: [
         tailwindcssAnimate,
         tailwindcssTypography,
+        require('@tailwindcss/aspect-ratio'),
     ]
 };
 export default config;
