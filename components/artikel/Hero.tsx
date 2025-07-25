@@ -9,11 +9,11 @@ const ArtikelHero = ({ article }: { article: { slug: string, frontmatter: any } 
     return (
         <AnimatedContainer visibleClass="!slide-in-from-top-0">
             <div className="container relative">
-                {/* <div className="h-[45rem] lg:h-[51.5rem] absolute top-0 bg-main-gradient w-screen left-1/2 -translate-x-1/2">
+                <div className="h-[45rem] lg:h-[51.5rem] absolute top-0 bg-main-gradient w-screen left-1/2 -translate-x-1/2">
                     <div className="absolute inset-0 overflow-hidden lg:block hidden">
                         <CirclePattern className="absolute w-[82rem] -bottom-full -translate-y-24" />
                     </div>
-                </div> */}
+                </div>
                 <div className="relative z-20 pt-20">
                     <h1 className="max-w-[calc(100%-3rem)] lg:max-w-5xl mx-auto title lg:text-6xl text-4xl text-center mt-18">Artikel</h1>
                     <p className="mt-6 max-w-[calc(100%-3rem)] lg:max-w-3xl text-lg lg:text-xl text-black text-center mx-auto">

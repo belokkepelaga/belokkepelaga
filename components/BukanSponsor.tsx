@@ -13,6 +13,7 @@ import WIKA from '@/components/icons/bukan-sponsor/wika.svg'
 import Medion from '@/components/icons/bukan-sponsor/medion.svg'
 import TMC from '@/components/icons/bukan-sponsor/tmc.svg'
 import SambalSS from '@/components/icons/bukan-sponsor/sambal-ss.svg'
+import Garudafood from '@/components/icons/bukan-sponsor/garudafood.svg'
 
 const BukanSponsorData = [
     {
@@ -28,7 +29,7 @@ const BukanSponsorData = [
         logo: Pepsodent,
     },
     {
-        logo: Indofood,
+        logo: Garudafood,
     },
     {
         logo: WIKA,
