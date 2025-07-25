@@ -7,6 +7,12 @@ import WonderfulIndonesia from '@/components/icons/bukan-sponsor/wonderful-indon
 import Jadesta from '@/components/icons/bukan-sponsor/jadesta.svg'
 import JED from '@/components/icons/bukan-sponsor/jed.svg'
 import Wisnu from '@/components/icons/bukan-sponsor/wisnu.svg'
+import Pepsodent from '@/components/icons/bukan-sponsor/pepsodent.svg'
+import Indofood from '@/components/icons/bukan-sponsor/indofood.svg'
+import WIKA from '@/components/icons/bukan-sponsor/wika.svg'
+import Medion from '@/components/icons/bukan-sponsor/medion.svg'
+import TMC from '@/components/icons/bukan-sponsor/tmc.svg'
+import SambalSS from '@/components/icons/bukan-sponsor/sambal-ss.svg'
 
 const BukanSponsorData = [
     {
@@ -19,17 +25,32 @@ const BukanSponsorData = [
         logo: Sinarmas,
     },
     {
-        logo: WonderfulIndonesia,
+        logo: Pepsodent,
     },
     {
-        logo: Jadesta,
+        logo: Indofood,
     },
+    {
+        logo: WIKA,
+    },
+    {
+        logo: Medion,
+    },
+    {
+        logo: TMC,
+    },
+    {
+        logo: SambalSS,
+    },
+    // {
+    //     logo: Jadesta,
+    // },
     {
         logo: JED,
     },
-    {
-        logo: Wisnu,
-    }
+    // {
+    //     logo: Wisnu,
+    // }
 ];
 
 type BukanSponsorProps = {
