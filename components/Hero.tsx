@@ -1,7 +1,6 @@
 'use client';
 import AnimatedContainer from '@/components/AnimatedContainer';
 import BukanSponsor from '@/components/BukanSponsor';
-import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 
 const Hero = () => {
@@ -50,12 +49,11 @@ const Hero = () => {
                             src="/cloud-5.png"
                             alt="Travel Hero Cloud Image"
                         />
-
                         <div className="absolute left-1/2 -translate-x-1/2 top-24 z-3 flex flex-col items-center gap-y-4">
                             <div className="title  text-xl lg:text-5xl bg-[linear-gradient(180deg,rgba(255,255,255,0.80)_4.92%,rgba(255,255,255,0.40)_89.39%)] leading-none">KKN-PPM UGM 2025</div>
                             <div className="title bg-[linear-gradient(180deg,#FFF_-16.99%,rgba(255,255,255,0.00)_100%)] text-3xl lg:text-8xl leading-none whitespace-nowrap">
-                                <span className="font-pinyon text-9xl lg:text-[18rem] !font-normal">B</span><span className="text-4xl lg:text-9xl">elok ke </span>
-                                <span className="font-pinyon text-9xl lg:text-[18rem] !font-normal">P</span><span className="text-4xl lg:text-9xl">elaga</span>
+                                <span className="font-pinyon text-9xl lg:text-[18rem] !font-normal">B</span><span className="text-[9rem] lg:text-10xl">elok </span>
+                                <span className="font-pinyon text-9xl lg:text-[18rem] !font-normal">P</span><span className="text-[9rem] lg:text-10xl">elaga</span>
                             </div>
                         </div>
                     </div>
