@@ -2,15 +2,15 @@ import React from 'react'
 import RagamTanaman from '@/components/RagamTanaman';
 import TernakDashboard from '@/components/DashboardTernakSidan';
 import DashboardTernakPelaga from '@/components/DashboradTernakPelaga';
-import DashboardTernakPelaga2 from '@/components/DashboardTernakPelaga2';
+import Footer from '@/components/Footer';
 
 const Agrikultur = () => {
   return (
-    <div className=" bg-[#F1EBDB]">
+    <div className=" bg-white">
       <RagamTanaman />
       <TernakDashboard />
       <DashboardTernakPelaga />
-      {/* <DashboardTernakPelaga2 /> */}
+      <Footer />
     </div>
   );    
 }
