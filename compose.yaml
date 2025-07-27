@@ -1,0 +1,9 @@
+services:
+  web:
+    image: haydaramru/belokkepelaga:latest
+    ports:
+      - "3000:3000"
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
