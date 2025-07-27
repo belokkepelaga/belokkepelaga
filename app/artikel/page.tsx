@@ -5,8 +5,8 @@ import { getAllArticles } from '@/lib/mdx';
 
 const ArtikelPage = async () => {
     const articles = await getAllArticles();
-    const mainArticle = articles.find(article => article.slug === 'artikel-utama');
-    const otherArticles = articles.filter(article => article.slug !== 'artikel-utama');
+    const mainArticle = articles.find(article => article.slug === 'Mengukir-Cerita-di-Pulau-Dewata');
+    const otherArticles = articles.filter(article => article.slug !== 'Mengukir-Cerita-di-Pulau-Dewata');
 
     return (
         <>

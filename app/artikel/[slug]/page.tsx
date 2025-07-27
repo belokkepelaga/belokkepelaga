@@ -22,7 +22,7 @@ const ArtikelDetailPage = async ({ params }: { params: { slug: string } }) => {
     return (
         <>
             <BlogDetailHero frontmatter={frontmatter} />
-            <div className="prose lg:prose-xl mx-auto py-12 max-w-4xl px-4">
+            <div className="prose lg:prose-xl mx-auto py-12 max-w-4xl px-4 text-justify">
                 <Component />
             </div>
             <Footer />

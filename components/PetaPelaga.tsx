@@ -58,86 +58,54 @@ interface Wisata {
 
 const dataWisata: Wisata[] = [
 {
-  name: "Bali Beans Plantation",
-  coords: [-8.255907621640755, 115.24510950837026],
-  image: "/balibeans.jpeg",
-  desc: `Bali Beans Plantation Desa Belok/Sidan merupakan atraksi wisata edukasi kopi yang terletak di Desa Belok/Sidan, tepatnya di Banjar Lawak, Kecamatan Petang, Badung. Bali Beans Plantation adalah usaha keluarga sejak tahun 1985 yang sekarang dikelola oleh anaknya. 
+  name: "Banjar Pucak Tinggan — Pura Pucak Mangu",
+  coords: [-8.251951432892257, 115.1892418943125],
+  image: "/mangu.jpeg",
+  desc: `Pura Pucak Mangu adalah salah satu Pura Kahyangan Jagat di Bali yang terletak di Banjar Pucak Tinggan, daerah paling utara Kabupaten Badung dengan ketinggian 2096 MDPL, sehingga dijuluki sebagai “ujung keris” Badung. Meski merupakan tempat ibadah, pura ini juga menjadi destinasi wisata religi yang populer karena menyuguhkan pemandangan alam indah serta nilai sejarah dan budaya Bali Aga. Menurut Lontar Babad Mengwi, pura ini berada di kaki Gunung Mangu (kini dikenal sebagai Gunung Catur) dan menjadi tempat pertapaan Raja I Gusti Agung Putu sebelum memenangkan perang dan mendirikan Kerajaan Mengwi. Diperkirakan sudah ada sejak zaman megalitikum, Pura Pucak Mangu memiliki arsitektur unik berbentuk lingga dan menyerupai candi, berbeda dari pura Bali pada umumnya. Keunikannya juga terletak pada lokasinya di tengah hutan lebat serta adanya dua Pura Penataran Agung, yaitu Pura Ulun Danu Beratan dan Pura Penataran Agung Pucak Mangu yang dibangun oleh Raja dan putranya. Untuk mencapainya, pengunjung harus menempuh jalur trekking selama 2–3 jam melalui empat pos pendakian yang cukup aman, meski pos 3 dan 4 memiliki jalur licin dan berlumpur. Pura ini dikelola oleh masyarakat Banjar Tinggan yang juga melaksanakan upakara atau piodalan secara rutin, menjadikan Pura Pucak Mangu sebagai destinasi wisata yang memadukan nilai religi, sejarah, budaya, dan petualangan alam.
 
-Kebun kopi di Bali Beans Plantation seluas 4 hektar ini ditanami kopi jenis Arabika. Selain itu, Bali Beans juga menjual kopi hasil produksinya ke berbagai kafe di daerah Kintamani, Karangasem, dan wilayah Bali lainnya. 
 
-Bali Beans Plantation menawarkan pengalaman “coffee journey” yang lengkap, mulai dari pengenalan kebun kopi, proses panen biji, pengolahan manual, hingga roasting dan cupping kopi dengan cita rasa khas Arabika pegunungan. 
 
-Wisatawan dapat mengikuti tur kebun kopi, pelatihan roasting manual, belajar teknik seduh kopi tradisional, serta menikmati kopi sambil menyaksikan pemandangan perbukitan yang asri. Biaya untuk tour kebun adalah Rp170.000/orang dan Rp50.000/orang untuk sesi cupping kopi. 
 
-Area plantation dilengkapi dengan jalur kebun, tempat duduk outdoor, serta area edukasi yang nyaman untuk kegiatan studi lapangan dan wisata keluarga. Bali Beans Plantation menjadi salah satu atraksi unggulan Desa Wisata Belok/Sidan dalam mengangkat wisata agro-edukasi kopi berkelanjutan dan pemberdayaan petani lokal.`,
+
+
+
+
+`,
+
 },
    {
-  name: "Badung Agro Techno Park",
-  coords: [-8.254372188195106, 115.1904433961847],
-  image: "/agrotechno.jpg",
-  desc: `Badung Agro Techno Park adalah destinasi wisata edukasi di Desa Belok/Sidan, 
-Kecamatan Petang, Kabupaten Badung, yang menggabungkan pertanian modern dengan teknologi terkini. 
-Dikelola oleh Pemkab Badung, dibangun sejak 2018 dan mulai beroperasi pada 2023 karena terhalang Covid-19. 
-Tempat ini bertujuan memperkenalkan dan mengedukasi masyarakat tentang teknologi pertanian ramah lingkungan 
-dan berkelanjutan, serta berfungsi sebagai pusat penelitian dan pengembangan pertanian.
+  name: " Banjar Semanik - Goa Maria Ratu Surga",
+  coords: [-8.280453805396727, 115.21824275609676],
+  image: "/goamaria.jpeg",
+  desc: `Goa Maria Ratu Surga adalah gereja Katolik yang terletak di antara perkebunan warga di Banjar Semanik dan awalnya dibangun oleh seorang pemilik kebun kopi keturunan Tionghoa Semarang untuk keperluan pribadi, namun kini terbuka untuk umum. Dibangun oleh komunitas Katolik dari berbagai daerah serta komunitas Jala Kasih, tempat ini menjadi destinasi ziarah yang menawarkan suasana ibadah yang tenang dan menyatu dengan alam. Goa Maria Ratu Surga dikelola oleh Bu Joko, penjaga yang ramah dan juga memiliki warung kopi untuk pengunjung. Keindahan gereja ini terletak pada lokasinya yang asri dan harmoni antara agama Katolik dan budaya Bali, yang terlihat dari patung Bunda Maria yang mengenakan kain Bali serta taman mawar putih yang menghiasi sekitarnya. Tempat ini tidak hanya menjadi tujuan ziarah umat Katolik, tetapi juga menarik wisatawan yang ingin merasakan perpaduan keindahan alam dan spiritualitas.
 
-Pengunjung dapat menikmati berbagai fasilitas: kafe, lahan pertanian modern dengan teknologi seperti irigasi otomatis,
-hidroponik, dan vertikultur, serta greenhouse untuk tanaman sayur dan buah yang menggunakan metode organik dan teknologi modern.
-Tersedia pula spot swafoto. Komitmen keberlanjutan mencakup penggunaan energi terbarukan, pengelolaan air efisien,
-dan pengurangan limbah—menjadikannya contoh nyata upaya konservasi lingkungan.`,
+`,
 },
 
   {
-    name: "Bali Eco Villa",
-    coords: [-8.296211943338827, 115.23331414140532],
-    image: "/balieco.jpg",
-    desc: `Bali Eco Village terletak di Desa Belok/Sidan, Kecamatan Petang, Badung, menjadi 
-atraksi wisata berbasis ekowisata dan retreat alam di kawasan pegunungan dengan udara 
-sejuk dan pemandangan hutan tropis. Atraksi ini dikelola oleh komunitas Bali Eco 
-Village bersama Pokdarwis, mengusung konsep living in nature dengan akomodasi 
-bambu ramah lingkungan, kebun organik, serta ruang terbuka hijau. Wisatawan dapat 
-melakukan berbagai aktivitas seperti yoga retreat, meditasi, trekking hutan, workshop 
-pertanian organik, serta menikmati kuliner sehat dari hasil kebun sekitar. Bali Eco Village 
-dilengkapi oleh aula bambu untuk kegiatan kelas yoga, tempat api unggun, serta area 
-kebun dengan konsep permakultur. Bali Eco Village menjadi pilihan bagi wisatawan yang 
-ingin merasakan ketenangan, belajar kehidupan berkelanjutan, dan menikmati keindahan 
-alam Desa Belok/Sidan dalam suasana damai dan asri. `,
+    name: " Banjar Pelaga - Jembatan Tukad Bangkung ",
+    coords: [-8.295949310491707, 115.2330730505751],
+    image: "/jembatan.jpeg",
+    desc: `Jembatan Tukad Bangkung merupakan jembatan tertinggi di Provinsi Bali dan 
+merupakan jembatan tertinggi kedua di Asia Tenggara dengan tinggi mencapai 360 
+meter. Jembatan tersebut menyambungkan antara Desa Pelaga dan Desa Belok/Sidan 
+yang diresmikan oleh Presiden Susilo Bambang Yudhoyono pada tahun 2007 setelah 
+direkonstruksi pada tahun 2001. Saat mengunjungi Jembatan Tukad Bangkung, 
+wisatawan dapat menikmati keindahan alam yang megah serta menikmati wisata 
+kuliner yang ada disekitar area jembatan. Salah satunya adalah Warung Pan Gede 
+yang menjual nasi lawar samsam guling dengan harga Rp15.000 hingga Rp25.000. 
+Selain itu, terdapat juga Warung Plaga Taste yang menjual makanan dan minuman 
+seperti ayam bakar rempah, ayam kuah kari, capcay dan nasi goreng yang 
+menggugah selera. Wisatawan pun dapat menggunakan kesempatan mengunjungi 
+Jembatan Tukad Bangkung untuk melanjutkan perjalanan ke Desa Belok/Sidan yang 
+memiliki banyak daya tarik wisata atau bisa melanjutkan perjalanan menuju daerah 
+Kintamani untuk menikmati pemandangan Gunung Batur.  `,
   },
   {
-    name: "Kebun Bunga Gemitir (Marigold) ",
-    coords: [-8.329259865593071, 115.229476457266],
-    image: "/marigold.jpg",
-    desc: `Kebun bunga gemitir yang ada di Desa Belok/Sidan menjadi daya tarik wisatawan karena 
-keindahan yang menjadi salah satu atraksi wisata favorit dengan keindahan hamparan 
-bunga marigold berwarna kuning keemasan yang memanjakan mata. Bunga marigold 
-atau yang dikenal dengan bunga gemitir, memiliki nilai penting dalam budaya dan agama 
-Hindu Bali. bunga ini sering digunakan dalam berbagai upacara keagamaan, termasuk 
-pemujaan dan sesaji, dimana bunga dicampur dengan beras dan dupa. Atraksi wisata ini 
-berada di pinggir jalan, tepatnya di kebun milik warga. Atraksi Wisata ini cukup 
-membayar seikhlasnya saja untuk berfoto. Wisatawan dapat berjalan di antara 
-petak-petak bunga, berfoto dengan latar hamparan marigold, serta belajar mengenai 
-perawatan dan manfaat bunga marigold bagi pertanian organik. Pengunjung juga dapat 
-membeli bunga potong langsung dari petani sebagai oleh-oleh. Kebun Bunga Marigold 
-tidak hanya menjadi destinasi foto Instagramable tetapi juga mendukung pemberdayaan 
-petani lokal serta pengembangan wisata berbasis pertanian yang berkelanjutan di Desa 
-Wisata Belok/Sidan. `,
-  }, 
-  {
- name: "Rimbun Farm, Cabin, and Camp ",
-    coords: [-8.329259865593071, 115.229476457266],
-    image: "/rimbun.jpg",
-    desc: `Rimbun Farm, Cabin, and Camp adalah atraksi wisata alam yang terletak di Desa 
-Belok/Sidan, Kecamatan Petang, menawarkan pengalaman berkemah, menginap, dan 
-edukasi pertanian dalam suasana pegunungan yang sejuk dan asri. Atraksi ini dikelola 
-secara mandiri oleh pemilik lokal dengan konsep eco-living dan agrowisata, mengajak 
-pengunjung untuk lebih dekat dengan alam dan kegiatan pertanian organik. Rimbun Farm 
-dilengkapi dengan kebun sayur, greenhouse, spot api unggun, dan area glamping dengan 
-kabin kayu yang nyaman. Wisatawan dapat menikmati berkemah di alam terbuka, belajar 
-bercocok tanam, memetik sayur, menikmati sunrise, serta relaksasi di hammock sambil 
-menikmati udara segar. Lokasinya mudah diakses dengan denah jalur yang sudah 
-dilengkapi papan petunjuk di sepanjang jalan menuju area camping. Rimbun Farm 
-menjadi pilihan tepat untuk wisata keluarga, healing, maupun edukasi pertanian di Desa 
-Wisata Belok/Sidan dengan suasana alam yang damai dan ramah anak.`,
+    name: " Banjar Nungnung - Air Terjun Nungnung",
+    coords: [-8.329090147578455, 115.2295409037087],
+    image: "/nungnung.jpeg",
+    desc: `Air Terjun Nungnung yang terletak di Banjar Nungnung merupakan destinasi alam yang populer, terutama bagi pecinta petualangan. Untuk mencapainya, wisatawan perlu melewati jalan aspal menuju loket tiket dengan biaya Rp10.000 untuk domestik dan Rp20.000 untuk mancanegara, serta parkir Rp2.000–Rp5.000. Perjalanan dilanjutkan dengan menuruni sekitar 2.000 anak tangga, ditemani pemandangan alam dan suara burung, hingga tiba di air terjun setinggi 71 meter yang mengalir deras ke kolam air jernih dan sejuk. Keindahan serta suasana hening membuat tempat ini cocok untuk berenang atau sekadar mencelupkan kaki. Air Terjun Nungnung dikelola secara kolaboratif antara Kementerian Pariwisata, Dinas Pariwisata Badung, dan Pokdarwis setempat, menunjukkan praktik community based tourism yang melibatkan masyarakat sebagai pengelola utama dengan dukungan pemerintah.`,
   }, 
   
 ];

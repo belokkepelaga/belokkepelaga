@@ -59,7 +59,7 @@ interface Wisata {
 const dataWisata: Wisata[] = [
 {
   name: "Bali Beans Plantation",
-  coords: [-8.255907621640755, 115.24510950837026],
+  coords: [-8.250531403778524, 115.24490582626538],
   image: "/balibeans.jpeg",
   desc: `Bali Beans Plantation Desa Belok/Sidan merupakan atraksi wisata edukasi kopi yang terletak di Desa Belok/Sidan, tepatnya di Banjar Lawak, Kecamatan Petang, Badung. Bali Beans Plantation adalah usaha keluarga sejak tahun 1985 yang sekarang dikelola oleh anaknya. 
 
@@ -73,7 +73,7 @@ Area plantation dilengkapi dengan jalur kebun, tempat duduk outdoor, serta area 
 },
    {
   name: "Badung Agro Techno Park",
-  coords: [-8.254372188195106, 115.1904433961847],
+  coords: [-8.290314057083858, 115.23899712235996],
   image: "/agrotechno.jpg",
   desc: `Badung Agro Techno Park adalah destinasi wisata edukasi di Desa Belok/Sidan, 
 Kecamatan Petang, Kabupaten Badung, yang menggabungkan pertanian modern dengan teknologi terkini. 
@@ -89,7 +89,7 @@ dan pengurangan limbah—menjadikannya contoh nyata upaya konservasi lingkungan.
 
   {
     name: "Bali Eco Villa",
-    coords: [-8.296211943338827, 115.23331414140532],
+    coords: [-8.267758062554906, 115.24928432421058],
     image: "/balieco.jpg",
     desc: `Bali Eco Village terletak di Desa Belok/Sidan, Kecamatan Petang, Badung, menjadi 
 atraksi wisata berbasis ekowisata dan retreat alam di kawasan pegunungan dengan udara 
@@ -104,8 +104,8 @@ ingin merasakan ketenangan, belajar kehidupan berkelanjutan, dan menikmati keind
 alam Desa Belok/Sidan dalam suasana damai dan asri. `,
   },
   {
-    name: "Kebun Bunga Gemitir (Marigold) ",
-    coords: [-8.329259865593071, 115.229476457266],
+    name: "Kebun Bunga Gemitir (Marigold)",
+    coords: [-8.28079376049061, 115.23873149325449],
     image: "/marigold.jpg",
     desc: `Kebun bunga gemitir yang ada di Desa Belok/Sidan menjadi daya tarik wisatawan karena 
 keindahan yang menjadi salah satu atraksi wisata favorit dengan keindahan hamparan 
@@ -124,7 +124,7 @@ Wisata Belok/Sidan. `,
   }, 
   {
  name: "Rimbun Farm, Cabin, and Camp ",
-    coords: [-8.329259865593071, 115.229476457266],
+    coords: [-8.256757935647773, 115.22769146441817],
     image: "/rimbun.jpg",
     desc: `Rimbun Farm, Cabin, and Camp adalah atraksi wisata alam yang terletak di Desa 
 Belok/Sidan, Kecamatan Petang, menawarkan pengalaman berkemah, menginap, dan 
