@@ -37,4 +37,7 @@ jobs:
           username: ${{ secrets.VPS_USERNAME }}
           key: ${{ secrets.VPS_SSH_PRIVATE_KEY }}
           script: |
-            docker stack deploy --compose-file /home/haydar/belokkepelaga/compose.yaml belokkepelaga
+            docker pull haydaramru/belokkepelaga:latest
+            docker stop belokkepelaga_web || true
+            docker rm belokkepelaga_web || true
+            docker run -d --name belokkepelaga_web -p 3000:3000 --restart always haydaramru/belokkepelaga:latest
