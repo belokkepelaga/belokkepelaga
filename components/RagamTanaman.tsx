@@ -80,7 +80,7 @@ const tanamanData: CardProps[] = [
     latinName: 'Capsicum annuum',
     JenisTanaman: 'Buah tahunan',
     description: 'Desa Pelaga di Kecamatan Petang, Kabupaten Badung, Bali merupakan daerah dataran tinggi yang dikenal dengan suhu sejuk dan tanah subur. Kondisi ini sangat cocok untuk budidaya berbagai tanaman hortikultura, salah satunya adalah alpukat. Alpukat di Desa Pelaga dikenal dengan ukuran buah yang besar, daging tebal, dan rasa gurih yang khas. Di Desa Pelaga ini, buah alpukat umumnya dijadikan campuran roti, salad, atau makanan penutup yang digemari di pasar lokal maupun wisatawan. Buah ini memiliki daya tarik sebagai buah sehat yang tidak hanya bermanfaat bagi tubuh tetapi juga berpeluang besar dalam diversifikasi usaha desa.',
-    image: '/cabe-merah.jpg',
+    image: '/alpukat.jpg',
      imagePosition: 'right',
   },
   {

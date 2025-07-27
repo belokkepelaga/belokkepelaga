@@ -104,7 +104,7 @@ const ChartBox: React.FC<ChartBoxProps> = ({ title, data }) => {
 
 export default function DesaBelokSidanTernak() {
   return (
-    <div className="bg-[#F1EBDB]  px-6 md:px-16 py-8">
+    <div className="bg-[#fefcec]  px-6 md:px-16 py-8">
       {/* Header Section */}
        <div className="flex flex-wrap justify-between items-center px-4 md:px-44 mb-10">
   <h2 className="text-xl font-bold leading-snug">

@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 
 const Agrikultur = () => {
   return (
-    <div className=" bg-white">
+    <div className=" bg-[#fefcec]">
       <RagamTanaman />
       <TernakDashboard />
       <DashboardTernakPelaga />
