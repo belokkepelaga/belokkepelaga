@@ -71,7 +71,7 @@ const tanamanData: CardProps[] = [
     latinName: 'Durio zibethinus',
     JenisTanaman: 'Buah tahunan',
     description: 'Durian varietas Kane tumbuh di dataran tinggi Desa Pelaga dengan sistem tumpangsari bersama kopi. Berukuran lebih kecil dari durian dataran rendah, namun memiliki aroma tajam, rasa manis sedikit pahit, dan tekstur lembut yang khas. Masa panen berlangsung sekitar Desember hingga Februari dan menjadi daya tarik dalam festival durian tahunan. Durian ini tak hanya hanya dapat dikonsumsi langsung, tetapi juga dapat diolah menjadi dodol, es krim, dan jajanan khas. Selain bernilai ekonomi, durian merupakan simbol keanekaragaman hayati dan potensi wisata musiman yang bisa terus dikembangkan sebagai identitas desa.',
-    image: '/jagung.jpg',
+    image: '/durian.jpeg',
     imagePosition: 'left',
   },
   {
@@ -80,7 +80,7 @@ const tanamanData: CardProps[] = [
     latinName: 'Capsicum annuum',
     JenisTanaman: 'Buah tahunan',
     description: 'Desa Pelaga di Kecamatan Petang, Kabupaten Badung, Bali merupakan daerah dataran tinggi yang dikenal dengan suhu sejuk dan tanah subur. Kondisi ini sangat cocok untuk budidaya berbagai tanaman hortikultura, salah satunya adalah alpukat. Alpukat di Desa Pelaga dikenal dengan ukuran buah yang besar, daging tebal, dan rasa gurih yang khas. Di Desa Pelaga ini, buah alpukat umumnya dijadikan campuran roti, salad, atau makanan penutup yang digemari di pasar lokal maupun wisatawan. Buah ini memiliki daya tarik sebagai buah sehat yang tidak hanya bermanfaat bagi tubuh tetapi juga berpeluang besar dalam diversifikasi usaha desa.',
-    image: '/alpukat.jpg',
+    image: '/alpukat.jpeg',
      imagePosition: 'right',
   },
   {
