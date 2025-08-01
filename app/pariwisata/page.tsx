@@ -9,7 +9,7 @@ const PetaPelaga = dynamic(() => import('@/components/PetaPelaga'), { ssr: false
 
 const Pariwisata = () => {
     return (
-    <div className="bg-[#F1EBDB] ">
+    <div className="bg-[#FEFCEC] ">
             {/* <MapSection /> */}
             <PetaSidan />
             <PetaPelaga />
