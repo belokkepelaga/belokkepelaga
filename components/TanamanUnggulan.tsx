@@ -51,7 +51,7 @@ const tanamanUnggulanData = [
         title: 'Bunga Gemitir (Marigold)',
         subtitle: 'Tagetes erecta',
         description: 'Bunga Gemitir, atau yang dikenal sebagai Marigold, merupakan komoditas hortikultura yang penting di Desa Pelaga dan Desa Belok Sidan, Kecamatan Petang, Kabupaten Badung, Bali. Dengan iklim tropis dan tanah yang subur, daerah ini sangat cocok untuk budidaya bunga ini. Bunga Gemitir memiliki warna oranye cerah dan bentuk yang menawan, dengan kelopak yang padat dan berukuran besar, yang membuatnya populer untuk digunakan dalam upacara keagamaan Hindu sebagai penghias sesaji, seperti Canang. Selain itu, kebun bunga ini juga menjadi destinasi wisata yang menarik, di mana pengunjung dapat menikmati keindahan hamparan bunga sambil berfoto. Dengan produksi yang tinggi, mencapai 0,9-1 kg per pohon, dan panen yang berkala setiap 3 hari, bunga ini menjadi sumber penghasilan utama bagi masyarakat setempat.',
-        image: '/agrikultur/marigold.jpg'
+        image: '/agrikultur/marigold.JPG'
     },
     {
         title: 'Durian Kane',
