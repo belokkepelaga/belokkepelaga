@@ -16,7 +16,7 @@ const PdfSection: React.FC = () => {
                 <div className="relative w-full max-w-5xl mx-auto rounded-lg overflow-hidden shadow-2xl border-4 border-white dark:border-gray-800">
                     <div className="aspect-w-16 aspect-h-9">
                         <iframe
-                            src="/booklet/dummy-booklet.pdf"
+                            src="/booklet/booklet-pelaga.pdf"
                             className="absolute top-0 left-0 w-full h-full border-0"
                             title="Booklet Pariwisata"
                         ></iframe>
