@@ -1,6 +1,6 @@
-'use client';
+// 'use client';
 import AnimatedContainer from '@/components/AnimatedContainer';
-import CirclePattern from '@/components/CirclePattern';
+// import CirclePattern from '@/components/CirclePattern';
 import Image from 'next/image';
 
 const ArtikelDetailHero = ({ frontmatter }: { frontmatter: any }) => {
