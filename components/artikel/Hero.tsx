@@ -21,7 +21,7 @@ const ArtikelHero = ({ article }: { article: { slug: string, frontmatter: any } 
                     </p>
                 </div> */}
                 <div className="relative h-[35rem] max-w-full mt-14 lg:mt-20 mx-auto rounded-4xl shadow-black-card overflow-hidden">
-                    <Image fill sizes="auto" className="object-cover -z-2" src={article.frontmatter.image} alt="Gambar Utama Artikel" />
+                    <Image fill sizes="auto" className="object-cover -z-2" src={article.frontmatter.image} alt="Gambar Utama Artikel" unoptimized={true} />
                     <div className="-z-1 inset-0 absolute bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_0%,rgba(0,0,0,0.48)_64.82%)]" />
                     <div className="bottom-0 absolute z-1 left-0 right-0 p-8 bg-surface-0 dark:bg-surface-950 rounded-t-3xl">
                         <Link href={`/artikel/${article.slug}`} className="flex items-center justify-between gap-4">
