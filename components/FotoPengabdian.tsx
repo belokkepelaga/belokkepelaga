@@ -41,7 +41,7 @@ const FotoPengabdian: React.FC<FotoPengabdianProps> = ({ className, ...props }) 
                     .map((_, i) => (
                         <div key={i} className="flex flex-nowrap items-center justify-center md:justify-start animate-infinite-scroll">
                             {FotoPengabdianData.map((item, j) => (
-                                <div key={j} className="w-[12.5rem] h-[18.75rem] mx-2 rounded-[0.625rem] overflow-hidden">
+                                <div key={j} className="w-[12.5rem] h-[18.75rem] mx-2 rounded-2xl overflow-hidden">
                                     <Image src={item.image} alt={`Image ${j + 1}`} width={200} height={300} className="object-cover w-full h-full" />
                                 </div>
                             ))}
