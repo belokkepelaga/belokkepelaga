@@ -39,13 +39,13 @@ const data = [
         text: [
             'Desa Belok/Sidan dikelilingi oleh lahan pertanian, kebun kopi dan jeruk, serta kawasan hutan yang masih asri. Aktivitas masyarakat yang beragam seperti bertani, beternak menciptakan suasana desa yang dinamis dan kaya nilai budaya.',
         ],
-        images: ['/potret-pengabdian/gua-maria-1.jpeg', '/potret-pengabdian/nungnung-1.jpeg', '/potret-pengabdian/gua-maria-2.jpeg']
+        images: ['/mengenal-desa/balibeans.jpeg', '/mengenal-desa/balieco.jpg', '/mengenal-desa/rimbun.jpg']
     },
     {
         title: 'Mengenal Desa Pelaga',
         text: [
             'Desa Pelaga terletak di dataran tinggi dengan ketinggian 700 hingga 1100 mdpl. Desa Pelaga memiliki kondisi alam yang sejuk dan lingkungan yang masih asri. Desa ini menyuguhkan suasana khas pegunungan dengan sumber daya alam yang melimpah.',
         ],
-        images: ['/potret-pengabdian/upacara-1.jpeg', '/potret-pengabdian/tukad-bangkung-1.jpeg', '/potret-pengabdian/gua-maria-2.jpeg']
+        images: ['/mengenal-desa/upacara-1.jpeg', '/mengenal-desa/gua-maria-1.jpeg', '/mengenal-desa/nungnung-1.jpeg', '/mengenal-desa/tukad-bangkung-1.jpeg', '/mengenal-desa/gua-maria-2.jpeg', ]
     }
 ];
