@@ -4,15 +4,18 @@ import MapSection from '@/components/MapSection'
 import PdfSection from '@/components/PdfSection'
 import Footer from '@/components/Footer';
 
+import BelokSidan from '@/components/pariwisata/BelokSidan';
+
 const PetaSidan = dynamic(() => import('@/components/PetaBelokSidan'), { ssr: false })
 const PetaPelaga = dynamic(() => import('@/components/PetaPelaga'), { ssr: false })
 
 const Pariwisata = () => {
     return (
-    <div className="bg-[#FEFCEC] ">
+        <div>
             {/* <MapSection /> */}
-            <PetaSidan />
-            <PetaPelaga />
+            <BelokSidan />
+            {/* <PetaSidan /> */}
+            {/* <PetaPelaga /> */}
             <MapSection />
             <PdfSection />
             <Footer />
