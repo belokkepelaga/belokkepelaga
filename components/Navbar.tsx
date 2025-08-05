@@ -9,8 +9,8 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from './ui/dro
 const Navbar: React.FC<React.HTMLAttributes<HTMLElement>> = ({ className, ...props }) => {
     const pathname = usePathname();
     return (
-        <div className={cn('sticky top-0 z-[99999] w-full bg-white', className)} {...props}>
-            <nav className="flex items-center justify-between py-6 w-[calc(100%-3rem)] max-w-[1152px] mx-auto border-b border-white/10 border-dashed">
+        <div className={cn('sticky top-0 z-[99999] w-full py-4', className)} {...props}>
+            <nav className="flex items-center justify-between py-3 px-6 w-[calc(100%-3rem)] max-w-[1152px] mx-auto border border-white/10 rounded-full bg-white/80 backdrop-blur-xl shadow-lg">
                 <Link href="/">
                     <Logo />
                 </Link>
@@ -27,10 +27,10 @@ const Navbar: React.FC<React.HTMLAttributes<HTMLElement>> = ({ className, ...pro
                     <DropdownMenuTrigger className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-surface-0 text-surface-950">
                         <i className="pi pi-bars"></i>
                     </DropdownMenuTrigger>
-                    <DropdownMenuContent className="top-[calc(100%+0.5rem)] max-h-96 overflow-auto left-auto !right-0 w-60 p-2 rounded-2xl shadow-blue-card flex flex-col bg-surface-0">
+                    <DropdownMenuContent className="top-[calc(100%+0.5rem)] max-h-96 overflow-auto left-auto !right-0 w-60 p-2 rounded-2xl shadow-blue-card flex flex-col bg-white">
                         <div className="flex flex-col ">
                             {navbarData.map((item) => (
-                                <Link href={item.to} key={item.id} className="py-2 px-3 rounded-lg hover:bg-surface-200 font-medium text-surface-500 hover:text-surface-950">
+                                <Link href={item.to} key={item.id} className="py-2 px-3 rounded-lg hover:bg-surface-200 font-medium text-black/72 hover:text-black">
                                     {item.title}
                                 </Link>
                             ))}
