@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import { MapContainer, TileLayer, Marker, GeoJSON } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -20,7 +21,7 @@ L.Icon.Default.mergeOptions({
     shadowUrl: markerShadow.src,
 });
 
-const Map = ({ onMarkerClick }: { onMarkerClick: (wisata: Wisata) => void }) => (
+const Map = dynamic(() => Promise.resolve(({ onMarkerClick }: { onMarkerClick: (wisata: Wisata) => void }) => (
     <MapContainer
         center={[-8.2675446, 115.2420599]}
         zoom={13}
@@ -50,7 +51,7 @@ const Map = ({ onMarkerClick }: { onMarkerClick: (wisata: Wisata) => void }) => 
         weight: 2,
         }} />
     </MapContainer>
-);
+)), { ssr: false });
 
 const InfoPanel = ({ selected }: { selected: Wisata | null }) => (
     <div className="flex-1">

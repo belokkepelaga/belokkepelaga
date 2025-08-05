@@ -1,10 +1,10 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
-import MapSection from '@/components/MapSection'
-import PdfSection from '@/components/PdfSection'
+const MapSection = dynamic(() => import('@/components/MapSection'), { ssr: false })
+const PdfSection = dynamic(() => import('@/components/PdfSection'), { ssr: false })
 import Footer from '@/components/Footer';
 
-import BelokSidan from '@/components/pariwisata/BelokSidan';
+const BelokSidan = dynamic(() => import('@/components/pariwisata/BelokSidan'), { ssr: false });
 
 const PetaSidan = dynamic(() => import('@/components/PetaBelokSidan'), { ssr: false })
 const PetaPelaga = dynamic(() => import('@/components/PetaPelaga'), { ssr: false })
