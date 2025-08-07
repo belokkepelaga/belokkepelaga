@@ -6,7 +6,7 @@ import { MapContainer, TileLayer, Marker, GeoJSON } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import Image from "next/image";
-import { dataWisata, wilayahGeojson, Wisata } from "./dataBelokSidan";
+import { dataWisata, wilayahGeojson, Wisata } from "./dataPelaga";
 import { leafIcon } from "./mapConfig";
 import AnimatedContainer from "@/components/AnimatedContainer";
 
@@ -23,8 +23,8 @@ L.Icon.Default.mergeOptions({
 
 const Map = dynamic(() => Promise.resolve(({ onMarkerClick }: { onMarkerClick: (wisata: Wisata) => void }) => (
     <MapContainer
-        center={[-8.2675446, 115.2420599]}
-        zoom={13}
+        center={[-8.2846327,115.2250059]}
+        zoom={12}
         scrollWheelZoom={true}
         touchZoom={true}
         doubleClickZoom={true}
@@ -87,7 +87,7 @@ const InfoPanel = ({ selected }: { selected: Wisata | null }) => (
     </div>
 );
 
-const BelokSidan = () => {
+const Pelaga = () => {
     const [selected, setSelected] = useState<Wisata | null>(null);
 
     return (
@@ -95,18 +95,18 @@ const BelokSidan = () => {
             <div className="container relative py-10 px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
-                        Desa Belok/Sidan
+                        Desa Pelaga
                         {/* <br />
                         <span className="text-pink-600">Desa Belok/Sidan</span> */}
                     </h1>
                 </div>
 
                 <div className="flex flex-col md:flex-row w-full max-w-7xl mx-auto gap-8">
-                    <div className="flex-1 order-1 md:order-none">
-                        <Map onMarkerClick={setSelected} />
-                    </div>
                     <div className="flex-1 order-2 md:order-none">
                         <InfoPanel selected={selected} />
+                    </div>
+                    <div className="flex-1 order-1 md:order-none">
+                        <Map onMarkerClick={setSelected} />
                     </div>
                 </div>
             </div>
@@ -114,4 +114,4 @@ const BelokSidan = () => {
     );
 };
 
-export default BelokSidan;
+export default Pelaga;

@@ -5,6 +5,7 @@ const Booklet = dynamic(() => import('@/components/pariwisata/Booklet'), { ssr: 
 import Footer from '@/components/Footer';
 
 const BelokSidan = dynamic(() => import('@/components/pariwisata/BelokSidan'), { ssr: false });
+const Pelaga = dynamic(() => import('@/components/pariwisata/Pelaga'), { ssr: false });
 
 const PetaSidan = dynamic(() => import('@/components/PetaBelokSidan'), { ssr: false })
 const PetaPelaga = dynamic(() => import('@/components/PetaPelaga'), { ssr: false })
@@ -15,8 +16,9 @@ const Pariwisata = () => {
     return (
         <div>
             <BelokSidan />
-            {/* <PetaSidan /> */}
-            {/* <PetaPelaga /> */}
+            <Pelaga />
+            {/* <PetaSidan />
+            <PetaPelaga /> */}
             <MapSection />
             <Booklet imageUrls={imageUrls} />
             <Footer />

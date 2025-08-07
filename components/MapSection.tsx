@@ -3,7 +3,7 @@ import React from 'react';
 interface MapSectionProps {
   /**
    * The main title to display above the map.
-   * @default 'Desa Pelaga'
+   * @default 'Peta Akomodasi Desa Pelaga'
    */
   title?: string;
   /**
@@ -18,7 +18,7 @@ interface MapSectionProps {
 }
 
 const MapSection: React.FC<MapSectionProps> = ({
-    title = 'Desa Pelaga',
+    title = 'Peta Akomodasi',
     subtitle,
     mapUrl = 'https://www.google.com/maps/d/embed?mid=17byg0XlF-9PAYTALyk1sh3hxb0gUmG8&ehbc=2E312F',
 }) => {
@@ -28,6 +28,8 @@ const MapSection: React.FC<MapSectionProps> = ({
                 <div className="mb-8 text-center">
                 <h1 className="text-4xl lg:text-5xl font-extrabold leading-tight text-gray-900 dark:text-white">
                     {title}
+                    <br />
+                    Desa Pelaga
                 </h1>
                 {subtitle && (
                     <p className="mt-2 text-lg text-gray-600 dark:text-gray-400">

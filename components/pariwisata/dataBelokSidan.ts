@@ -1,4 +1,3 @@
-
 import { FeatureCollection } from 'geojson';
 
 export const wilayahGeojson: FeatureCollection = {
@@ -10,11 +9,11 @@ export const wilayahGeojson: FeatureCollection = {
         geometry: {
             type: "Polygon",
             coordinates: [[
-            [115.200, -8.260],
-            [115.220, -8.270],
-            [115.210, -8.280],
-            [115.190, -8.275],
-            [115.200, -8.260]
+            // [115.200, -8.260],
+            // [115.220, -8.270],
+            // [115.210, -8.280],
+            // [115.190, -8.275],
+            // [115.200, -8.260]
             ]]
         }
         }
