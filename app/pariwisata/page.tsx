@@ -3,7 +3,6 @@ import dynamic from 'next/dynamic'
 const MapSection = dynamic(() => import('@/components/MapSection'), { ssr: false })
 const Booklet = dynamic(() => import('@/components/pariwisata/Booklet'), { ssr: false })
 import Footer from '@/components/Footer';
-// import TestImage from '@/components/TestImage';
 
 const BelokSidan = dynamic(() => import('@/components/pariwisata/BelokSidan'), { ssr: false });
 
@@ -15,13 +14,11 @@ const Pariwisata = () => {
 
     return (
         <div>
-            {/* <MapSection /> */}
             <BelokSidan />
             {/* <PetaSidan /> */}
             {/* <PetaPelaga /> */}
             <MapSection />
             <Booklet imageUrls={imageUrls} />
-            {/* <TestImage /> */}
             <Footer />
         </div>
     )

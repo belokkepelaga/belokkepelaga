@@ -1,33 +1,51 @@
 import React from 'react';
 
-const MapSection: React.FC = () => {
+interface MapSectionProps {
+  /**
+   * The main title to display above the map.
+   * @default 'Desa Pelaga'
+   */
+  title?: string;
+  /**
+   * An optional subtitle to display below the main title.
+   */
+  subtitle?: string;
+  /**
+   * The URL of the Google Maps embed.
+   * @default 'https://www.google.com/maps/d/embed?mid=17byg0XlF-9PAYTALyk1sh3hxb0gUmG8&ehbc=2E312F'
+   */
+  mapUrl?: string;
+}
+
+const MapSection: React.FC<MapSectionProps> = ({
+    title = 'Desa Pelaga',
+    subtitle,
+    mapUrl = 'https://www.google.com/maps/d/embed?mid=17byg0XlF-9PAYTALyk1sh3hxb0gUmG8&ehbc=2E312F',
+}) => {
     return (
-        // A section container with a subtle background color to stand out
-        <section className="bg-gray-50 dark:bg-gray-900 py- sm:py-16">
+        <section className="py-8 sm:py-16">
             <div className="container mx-auto px-4">
-                <div className="text-center mb-8">
-                    <h1 className="text-4xl lg:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight">
-                        Desa Pelaga
-                    </h1>
-                    {/* <p className="text-lg text-gray-600 dark:text-gray-400 mt-2">
-                        Lihat lokasi agrikultur, pariwisata, dan titik penting lainnya di peta interaktif ini.
-                    </p> */}
+                <div className="mb-8 text-center">
+                <h1 className="text-4xl lg:text-5xl font-extrabold leading-tight text-gray-900 dark:text-white">
+                    {title}
+                </h1>
+                {subtitle && (
+                    <p className="mt-2 text-lg text-gray-600 dark:text-gray-400">
+                    {subtitle}
+                    </p>
+                )}
                 </div>
 
-                {/* Wrapper for the iframe to apply styling like shadows and rounded corners */}
-                <div className="relative w-full max-w-5xl mx-auto rounded-lg overflow-hidden shadow-2xl border-4 border-white dark:border-gray-800">
-                    {/* The 'aspect-w-16' and 'aspect-h-9' classes create a responsive container 
-                      that maintains a 16:9 aspect ratio, a common practice for embeds.
-                    */}
-                    <div className="aspect-w-16 aspect-h-9">
+                <div className="relative mx-auto w-full max-w-5xl overflow-hidden rounded-xl shadow-2xl dark:border-gray-800">
+                    <div className="aspect-h-3 aspect-w-4 md:aspect-h-9 md:aspect-w-16">
                         <iframe
-                            src="https://www.google.com/maps/d/embed?mid=17byg0XlF-9PAYTALyk1sh3hxb0gUmG8&ehbc=2E312F"
-                            className="absolute top-0 left-0 w-full h-full border-0"
-                            allowFullScreen={false}
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                            title="Peta Desa Belok Sidan dan Pelaga"
-                        ></iframe>
+                        src={mapUrl}
+                        className="absolute left-0 top-0 h-full w-full border-0"
+                        allowFullScreen={false}
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title={`Peta Interaktif: ${title}`}
+                        />
                     </div>
                 </div>
             </div>
