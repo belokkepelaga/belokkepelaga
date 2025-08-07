@@ -17,6 +17,14 @@ const nextConfig = {
       ],
     });
 
+    config.module.rules.push({
+      test: /pdf\.worker\.min\.js$/,
+      type: 'asset/resource',
+      generator: {
+        filename: 'static/chunks/[name][ext]',
+      },
+    });
+
     return config;
   },
 };

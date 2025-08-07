@@ -141,3 +141,612 @@ body {
         background: linear-gradient(90deg, rgba(0,0,0,0.56) 0%, rgba(0,0,0,0.56) 49%, rgba(0,0,0,0.00) 100%);
     }
 }
+
+/* AnnotationLayer.css */
+.annotationLayer section {
+  position: absolute;
+}
+
+.annotationLayer .linkAnnotation > a,
+.annotationLayer .buttonWidgetAnnotation.pushButton > a {
+  position: absolute;
+  font-size: 1em;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.annotationLayer .linkAnnotation > a:hover,
+.annotationLayer .buttonWidgetAnnotation.pushButton > a:hover {
+  opacity: 0.2;
+  background: #ff0;
+  box-shadow: 0px 2px 10px #ff0;
+}
+
+.annotationLayer .textAnnotation img {
+  position: absolute;
+  cursor: pointer;
+}
+
+.annotationLayer .textWidgetAnnotation input,
+.annotationLayer .textWidgetAnnotation textarea,
+.annotationLayer .choiceWidgetAnnotation select,
+.annotationLayer .buttonWidgetAnnotation.checkBox input,
+.annotationLayer .buttonWidgetAnnotation.radioButton input {
+  background-color: rgba(0, 54, 255, 0.13);
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  font-size: 9px;
+  height: 100%;
+  margin: 0;
+  padding: 0 3px;
+  vertical-align: top;
+  width: 100%;
+}
+
+.annotationLayer .choiceWidgetAnnotation select option {
+  padding: 0;
+}
+
+.annotationLayer .buttonWidgetAnnotation.radioButton input {
+  border-radius: 50%;
+}
+
+.annotationLayer .textWidgetAnnotation textarea {
+  font: message-box;
+  font-size: 9px;
+  resize: none;
+}
+
+.annotationLayer .textWidgetAnnotation input[disabled],
+.annotationLayer .textWidgetAnnotation textarea[disabled],
+.annotationLayer .choiceWidgetAnnotation select[disabled],
+.annotationLayer .buttonWidgetAnnotation.checkBox input[disabled],
+.annotationLayer .buttonWidgetAnnotation.radioButton input[disabled] {
+  background: none;
+  border: 1px solid transparent;
+  cursor: not-allowed;
+}
+
+.annotationLayer .textWidgetAnnotation input:hover,
+.annotationLayer .textWidgetAnnotation textarea:hover,
+.annotationLayer .choiceWidgetAnnotation select:hover,
+.annotationLayer .buttonWidgetAnnotation.radioButton input:hover {
+  border: 1px solid #000;
+}
+
+.annotationLayer .textWidgetAnnotation input:focus,
+.annotationLayer .textWidgetAnnotation textarea:focus,
+.annotationLayer .choiceWidgetAnnotation select:focus {
+  background: none;
+  border: 1px solid transparent;
+}
+
+.annotationLayer .buttonWidgetAnnotation.checkBox input:checked:before,
+.annotationLayer .buttonWidgetAnnotation.checkBox input:checked:after,
+.annotationLayer .buttonWidgetAnnotation.radioButton input:checked:before {
+  background-color: #000;
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.annotationLayer .buttonWidgetAnnotation.checkBox input:checked:before,
+.annotationLayer .buttonWidgetAnnotation.checkBox input:checked:after {
+  height: 80%;
+  left: 45%;
+  width: 1px;
+}
+
+.annotationLayer .buttonWidgetAnnotation.checkBox input:checked:before {
+  transform: rotate(45deg);
+}
+
+.annotationLayer .buttonWidgetAnnotation.checkBox input:checked:after {
+  transform: rotate(-45deg);
+}
+
+.annotationLayer .buttonWidgetAnnotation.radioButton input:checked:before {
+  border-radius: 50%;
+  height: 50%;
+  left: 30%;
+  top: 20%;
+  width: 50%;
+}
+
+.annotationLayer .textWidgetAnnotation input.comb {
+  font-family: monospace;
+  padding-left: 2px;
+  padding-right: 0;
+}
+
+.annotationLayer .textWidgetAnnotation input.comb:focus {
+  /*
+   * Letter spacing is placed on the right side of each character. Hence, the
+   * letter spacing of the last character may be placed outside the visible
+   * area, causing horizontal scrolling. We avoid this by extending the width
+   * when the element has focus and revert this when it loses focus.
+   */
+  width: 115%;
+}
+
+.annotationLayer .buttonWidgetAnnotation.checkBox input,a
+.annotationLayer .buttonWidgetAnnotation.radioButton input {
+  appearance: none;
+  padding: 0;
+}
+
+.annotationLayer .popupWrapper {
+  position: absolute;
+  width: 20em;
+}
+
+.annotationLayer .popup {
+  position: absolute;
+  z-index: 200;
+  max-width: 20em;
+  background-color: #FFFF99;
+  box-shadow: 0px 2px 5px #888;
+  border-radius: 2px;
+  padding: 6px;
+  margin-left: 5px;
+  cursor: pointer;
+  font: message-box;
+  font-size: 9px;
+  word-wrap: break-word;
+}
+
+.annotationLayer .popup > * {
+  font-size: 9px;
+}
+
+.annotationLayer .popup h1 {
+  display: inline-block;
+}
+
+.annotationLayer .popup span {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.annotationLayer .popup p {
+  border-top: 1px solid #333;
+  margin-top: 2px;
+  padding-top: 2px;
+}
+
+.annotationLayer .highlightAnnotation,
+.annotationLayer .underlineAnnotation,
+.annotationLayer .squigglyAnnotation,
+.annotationLayer .strikeoutAnnotation,
+.annotationLayer .freeTextAnnotation,
+.annotationLayer .lineAnnotation svg line,
+.annotationLayer .squareAnnotation svg rect,
+.annotationLayer .circleAnnotation svg ellipse,
+.annotationLayer .polylineAnnotation svg polyline,
+.annotationLayer .polygonAnnotation svg polygon,
+.annotationLayer .caretAnnotation,
+.annotationLayer .inkAnnotation svg polyline,
+.annotationLayer .stampAnnotation,
+.annotationLayer .fileAttachmentAnnotation {
+  cursor: pointer;
+}
+
+/* pdf_viewer.css */
+.pdfViewer .page {
+  direction: ltr;
+  width: 816px;
+  height: 1056px;
+  margin: 1px auto -8px auto;
+  position: relative;
+  overflow: hidden;
+  border: 9px solid transparent;
+  background-clip: content-box;
+  background-color: white;
+  
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.pdfViewer.removePageBorders .page {
+  margin: 0px auto 10px auto;
+  border: none;
+}
+
+.pdfViewer .page:first-child {
+  margin-top: 10px;
+}
+
+.pdfViewer .page:last-child {
+  margin-bottom: 10px;
+}
+
+.pdfViewer .page.canvas .loadingIcon {
+  
+}
+
+.pdfViewer .page.textLayer .loadingIcon {
+  
+}
+
+.pdfViewer .page.annotationLayer .loadingIcon {
+  
+}
+
+.pdfViewer .page.error {
+  background-color: #fcc;
+  background-image: none;
+}
+
+.pdfViewer .page.error .errorWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a00;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.pdfViewer .page.error .errorWrapper::before {
+  content: '✖';
+  font-size: 2em;
+  margin-right: 0.5em;
+}
+
+.pdfViewer .page.error .errorWrapper .errorText {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pdfViewer .page.error .errorWrapper .errorLink {
+  display: block;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+}
+
+.pdfViewer .page.error .errorWrapper .errorLink::before {
+  content: '→';
+  margin-right: 0.5em;
+}
+
+.pdfViewer .page.error .errorWrapper .errorLink:hover {
+  text-decoration: underline;
+}
+
+.pdfViewer .page.error .errorWrapper .errorLink:active {
+  color: #555;
+}
+
+.pdfViewer .textLayer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  opacity: 0.2;
+  line-height: 1;
+}
+
+.pdfViewer .textLayer ::selection {
+  background: rgb(0, 0, 255, 0.3);
+}
+
+.pdfViewer .textLayer ::-moz-selection {
+  background: rgb(0, 0, 255, 0.3);
+}
+
+.pdfViewer .textLayer span {
+  color: transparent;
+  position: absolute;
+  white-space: pre;
+  cursor: text;
+  transform-origin: 0% 0%;
+}
+
+.pdfViewer .textLayer .highlight {
+  margin: -1px;
+  padding: 1px;
+
+  background-color: rgb(180, 0, 170, 0.2);
+  border-radius: 4px;
+}
+
+.pdfViewer .textLayer .highlight.begin {
+  border-radius: 4px 0px 0px 4px;
+}
+
+.pdfViewer .textLayer .highlight.end {
+  border-radius: 0px 4px 4px 0px;
+}
+
+.pdfViewer .textLayer .highlight.middle {
+  border-radius: 0px;
+}
+
+.pdfViewer .textLayer .highlight.selected {
+  background-color: rgb(0, 100, 0, 0.2);
+}
+
+.pdfViewer .textLayer br {
+  display: none;
+}
+
+.pdfViewer .annotationLayer section {
+  position: absolute;
+}
+
+.pdfViewer .annotationLayer .linkAnnotation > a,
+.pdfViewer .annotationLayer .buttonWidgetAnnotation.pushButton > a {
+  position: absolute;
+  font-size: 1em;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pdfViewer .annotationLayer .linkAnnotation > a:hover,
+.pdfViewer .annotationLayer .buttonWidgetAnnotation.pushButton > a:hover {
+  opacity: 0.2;
+  background: #ff0;
+  box-shadow: 0px 2px 10px #ff0;
+}
+
+.pdfViewer .annotationLayer .textAnnotation img {
+  position: absolute;
+  cursor: pointer;
+}
+
+.pdfViewer .annotationLayer .textWidgetAnnotation input,
+.pdfViewer .annotationLayer .textWidgetAnnotation textarea,
+.pdfViewer .annotationLayer .choiceWidgetAnnotation select,
+.pdfViewer .annotationLayer .buttonWidgetAnnotation.checkBox input,
+.pdfViewer .annotationLayer .buttonWidgetAnnotation.radioButton input {
+  background-color: rgba(0, 54, 255, 0.13);
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  font-size: 9px;
+  height: 100%;
+  margin: 0;
+  padding: 0 3px;
+  vertical-align: top;
+  width: 100%;
+}
+
+.pdfViewer .annotationLayer .choiceWidgetAnnotation select option {
+  padding: 0;
+}
+
+.pdfViewer .annotationLayer .buttonWidgetAnnotation.radioButton input {
+  border-radius: 50%;
+}
+
+.pdfViewer .annotationLayer .textWidgetAnnotation textarea {
+  font: message-box;
+  font-size: 9px;
+  resize: none;
+}
+
+.pdfViewer .annotationLayer .textWidgetAnnotation input[disabled],
+.pdfViewer .annotationLayer .textWidgetAnnotation textarea[disabled],
+.pdfViewer .annotationLayer .choiceWidgetAnnotation select[disabled],
+.pdfViewer .annotationLayer .buttonWidgetAnnotation.checkBox input[disabled],
+.pdfViewer .annotationLayer .buttonWidgetAnnotation.radioButton input[disabled] {
+  background: none;
+  border: 1px solid transparent;
+  cursor: not-allowed;
+}
+
+.pdfViewer .annotationLayer .textWidgetAnnotation input:hover,
+.pdfViewer .annotationLayer .textWidgetAnnotation textarea:hover,
+.pdfViewer .annotationLayer .choiceWidgetAnnotation select:hover,
+.pdfViewer .annotationLayer .buttonWidgetAnnotation.checkBox input:hover,
+.pdfViewer .annotationLayer .buttonWidgetAnnotation.radioButton input:hover {
+  border: 1px solid #000;
+}
+
+.pdfViewer .annotationLayer .textWidgetAnnotation input:focus,
+.pdfViewer .annotationLayer .textWidgetAnnotation textarea:focus,
+.pdfViewer .annotationLayer .choiceWidgetAnnotation select:focus {
+  background: none;
+  border: 1px solid transparent;
+}
+
+.pdfViewer .annotationLayer .buttonWidgetAnnotation.checkBox input:checked::before,
+.pdfViewer .annotationLayer .buttonWidgetAnnotation.checkBox input:checked::after,
+.pdfViewer .annotationLayer .buttonWidgetAnnotation.radioButton input:checked::before {
+  background-color: #000;
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.pdfViewer .annotationLayer .buttonWidgetAnnotation.checkBox input:checked::before,
+.pdfViewer .annotationLayer .buttonWidgetAnnotation.checkBox input:checked::after {
+  height: 80%;
+  left: 45%;
+  width: 1px;
+}
+
+.pdfViewer .annotationLayer .buttonWidgetAnnotation.checkBox input:checked::before {
+  transform: rotate(45deg);
+}
+
+.pdfViewer .annotationLayer .buttonWidgetAnnotation.checkBox input:checked::after {
+  transform: rotate(-45deg);
+}
+
+.pdfViewer .annotationLayer .buttonWidgetAnnotation.radioButton input:checked::before {
+  border-radius: 50%;
+  height: 50%;
+  left: 30%;
+  top: 20%;
+  width: 50%;
+}
+
+.pdfViewer .annotationLayer .textWidgetAnnotation input.comb {
+  font-family: monospace;
+  padding-left: 2px;
+  padding-right: 0;
+}
+
+.pdfViewer .annotationLayer .textWidgetAnnotation input.comb:focus {
+  /*
+   * Letter spacing is placed on the right side of each character. Hence, the
+   * letter spacing of the last character may be placed outside the visible
+   * area, causing horizontal scrolling. We avoid this by extending the width
+   * when the element has focus and revert this when it loses focus.
+   */
+  width: 115%;
+}
+
+.pdfViewer .annotationLayer .buttonWidgetAnnotation.checkBox input,
+.pdfViewer .annotationLayer .buttonWidgetAnnotation.radioButton input {
+  appearance: none;
+  padding: 0;
+}
+
+.pdfViewer .annotationLayer .popupWrapper {
+  position: absolute;
+  width: 20em;
+}
+
+.pdfViewer .annotationLayer .popup {
+  position: absolute;
+  z-index: 200;
+  max-width: 20em;
+  background-color: #FFFF99;
+  box-shadow: 0px 2px 5px #888;
+  border-radius: 2px;
+  padding: 6px;
+  margin-left: 5px;
+  cursor: pointer;
+  font: message-box;
+  font-size: 9px;
+  word-wrap: break-word;
+}
+
+.pdfViewer .annotationLayer .popup > * {
+  font-size: 9px;
+}
+
+.pdfViewer .annotationLayer .popup h1 {
+  display: inline-block;
+}
+
+.pdfViewer .annotationLayer .popup span {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.pdfViewer .annotationLayer .popup p {
+  border-top: 1px solid #333;
+  margin-top: 2px;
+  padding-top: 2px;
+}
+
+.pdfViewer .annotationLayer .highlightAnnotation,
+.pdfViewer .annotationLayer .underlineAnnotation,
+.pdfViewer .annotationLayer .squigglyAnnotation,
+.pdfViewer .annotationLayer .strikeoutAnnotation,
+.pdfViewer .annotationLayer .freeTextAnnotation,
+.pdfViewer .annotationLayer .lineAnnotation svg line,
+.pdfViewer .annotationLayer .squareAnnotation svg rect,
+.pdfViewer .annotationLayer .circleAnnotation svg ellipse,
+.pdfViewer .annotationLayer .polylineAnnotation svg polyline,
+.pdfViewer .annotationLayer .polygonAnnotation svg polygon,
+.pdfViewer .annotationLayer .caretAnnotation,
+.pdfViewer .annotationLayer .inkAnnotation svg polyline,
+.pdfViewer .annotationLayer .stampAnnotation,
+.pdfViewer .annotationLayer .fileAttachmentAnnotation {
+  cursor: pointer;
+}
+
+/* React PageFlip Styles */
+.flip-book {
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.7); /* Increased shadow for visibility */
+  display: none; /* This will be overridden by react-pageflip's JS */
+  background-size: cover;
+}
+
+.flipbook-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto; /* Allow height to adjust to content */
+  margin-top: 20px; /* Adjust as needed */
+  margin-bottom: 20px; /* Adjust as needed */
+  overflow: hidden; /* Hide any overflow */
+}
+
+.page {
+  padding: 0;
+  background-color: hsl(35, 55, 98);
+  color: hsl(35, 35, 35);
+  border: none;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.page-header {
+  height: 30px;
+  font-size: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.page-text {
+  height: 100%;
+  flex-grow: 1;
+  font-size: 80%;
+  text-align: justify;
+  margin-top: 10px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  border-top: solid 1px hsl(35, 55, 90);
+}
+
+.page-footer {
+  height: 30px;
+  border-top: solid 1px hsl(35, 55, 90);
+  font-size: 80%;
+  color: hsl(35, 20, 50);
+}
+
+.page.--left {
+  border-right: 0;
+  box-shadow: inset -7px 0 30px -7px rgba(0, 0, 0, 0.4);
+}
+
+.page.--right {
+  border-left: 0;
+  box-shadow: inset 7px 0 30px -7px rgba(0, 0, 0, 0.4);
+}
+
+.page.--right .page-footer {
+  text-align: right;
+}
+
+.page.hard {
+  background-color: hsl(35, 50, 90);
+  border: solid 1px hsl(35, 20, 50);
+}
+
+.page-cover.page-cover-top {
+  box-shadow: inset 0px 0 30px 0px rgba(36, 10, 3, 0.5), -2px 0 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.page-cover.page-cover-bottom {
+  box-shadow: inset 0px 0 30px 0px rgba(36, 10, 3, 0.5), 10px 0 8px 0px rgba(0, 0, 0, 0.4);
+}
